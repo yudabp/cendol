@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Admin Dashboard')
+@section('title', 'Alaska6d')
 
 @section('content')
 <div class="row">
@@ -64,19 +64,19 @@
                         <div class="col">
                             <div class="form-group">
                                 <label class="control-label">1st Winner:</label>
-                                <input type="text" name="no_satu" id="no_satu" class="form-control" onkeypress="return isNumberKey(event)" maxlength="4" minlength="4" placeholder="0000" autocomplete="off">
+                                <input type="text" name="no_satu" id="no_satu" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" maxlength="4" minlength="4" placeholder="0000" autocomplete="off">
                             </div>
                         </div>
                         <div class="col">
                             <div class="form-group">
                                 <label class="control-label">2nd Winner:</label>
-                                <input type="text" name="no_dua" id="no_dua" class="form-control" onkeypress="return isNumberKey(event)" maxlength="4" minlength="4" placeholder="0000" autocomplete="off">
+                                <input type="text" name="no_dua" id="no_dua" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" maxlength="4" minlength="4" placeholder="0000" autocomplete="off">
                             </div>
                         </div>
                         <div class="col">
                             <div class="form-group">
                                 <label class="control-label">3rd Winner:</label>
-                                <input type="text" name="no_tiga" id="no_tiga" class="form-control" onkeypress="return isNumberKey(event)" maxlength="4" minlength="4" placeholder="0000" autocomplete="off">
+                                <input type="text" name="no_tiga" id="no_tiga" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" maxlength="4" minlength="4" placeholder="0000" autocomplete="off">
                             </div>
                         </div>
                     </div>
@@ -105,6 +105,7 @@
 <script src="{{ asset('assets/vendor/datatables/js/DataTables.bootstrap4.min.js') }}"></script>
 <script src="{{ asset('js/bootstrap-datepicker.min.js') }}"></script>
 <script src="{{ asset('js/toastr.min.js') }}"></script>
+<script src="{{ asset('js/sweetalert2.min.js') }}"></script>
 <script>
     $(document).ready(function () {
         $('#table').DataTable({
@@ -141,11 +142,15 @@
 
         // Reset form when close button pressed
         $('.close').on('click', function () {
+            $('#btn').removeClass('btn-info').addClass('btn-success').val('Save');
+            $('#btn').removeClass('btn-success').addClass('btn-info').val('Save');
+            $('#form_result').html('');
             $('#form-number')[0].reset();
         });
 
         // open the datepicker
         $('.datepicker').datepicker({
+            autoclose: true,
             todayHighlight: true,
         });
 
@@ -166,7 +171,11 @@
             // action condition
             if ($('#action').val() == 'add') {
                 url = "{{ route('store') }}";
-                pesan = "Number added Successfully!";
+                pesan = "👍 Number added Successfully!";
+            }
+            if ($('#action').val() == 'edit') {
+                url = "{{ route('update') }}";
+                pesan = "👍 Number updated Successfully!";
             }
 
             // Added record into database
@@ -177,14 +186,6 @@
                 data: $(this).serialize(),
                 success: function (data) {
                     var html = '';
-                    if (data.errors) {
-                        html = '<div class="alert alert-danger"><ul>';
-                        for (var i = 0; i < data.errors.length; i++) {
-                            html += '<li>'+ data.errors[i] +'</li>';
-                        }
-                        html += '</ul></div>';
-                    }
-
                     if (data.success) {
                         toastr.success(pesan);
                         $('#form-number')[0].reset();
@@ -193,18 +194,41 @@
                         $('#btn').removeClass('btn-info').addClass('btn-success').val('Save');
                         $('#table').DataTable().ajax.reload();
                     }
+
+                    if (data.errors) {
+                        html = '<div class="alert alert-danger"><ul>';
+                        for (var i = 0; i < data.errors.length; i++) {
+                            html += '<li>'+ data.errors[i] +'</li>';
+                        }
+                        html += '</ul></div>';
+                        toastr.error('⚠ You must fill all columns!');
+                    }
                     $('#form_result').html(html);
                 }
             });
         });
 
-        // Input only number function
-        function isNumberKey(evt) {
-            var charCode = (evt.which) ? evt.which : event.keyCode
-            if (charCode > 31 && (charCode < 48 || charCode > 57))
-            return false;
-            return true;
-        }
+        // Get data by Id
+        $(document).on('click', '.edit', function () {
+            var id = $(this).attr('id');
+
+            $.ajax({
+                url: '/secret/edit/'+id,
+                dataType: 'JSON',
+                success: function (data) {
+                    $('#modal-number').modal('show');
+                    $('.modal-title').text('Edit Winner');
+                    $('#action').val('edit');
+                    $('#btn').removeClass('btn-success').addClass('btn-info').val('Update');
+                    $('#tanggal').val(data.number.tanggal);
+                    $('#waktu').val(data.number.waktu);
+                    $('#no_satu').val(data.number.no_satu);
+                    $('#no_dua').val(data.number.no_dua);
+                    $('#no_tiga').val(data.number.no_tiga);
+                    $('#hidden_id').val(data.number.id);
+                }
+            });
+        });
 
         // toastr option
         toastr.options = {
@@ -217,7 +241,7 @@
             "onclick": null,
             "showDuration": "300",
             "hideDuration": "1000",
-            "timeOut": "2000",
+            "timeOut": "4000",
             "extendedTimeOut": "1000",
             "showEasing": "swing",
             "hideEasing": "linear",
@@ -225,5 +249,47 @@
             "hideMethod": "fadeOut"
         }
     });
+
+    function deleteConfirmation(id) {
+        var number = id;
+        console.log(number);
+        Swal.fire({
+            icon: 'warning',
+            title: "Delete?",
+            text: "Please ensure and then confirm!",
+            type: "warning",
+            showCancelButton: !0,
+            confirmButtonText: "Yes, delete it!",
+            cancelButtonText: "No, Cancel it!",
+            reverseButtons: !0
+        }).then(function (event) {
+            if (event.value === true) {
+                var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
+                $.ajax({
+                    url: '/secret/delete/'+number,
+                    type: 'POST',
+                    data: { _token: CSRF_TOKEN },
+                    dataType: 'JSON',
+                    success: function (results) {
+                        if (results.success === true) {
+                            Swal.fire({
+                                icon: 'success',
+                                title: "Success!",
+                                text: "Data Deleted Successfully.",
+                            });
+                            $('#form-number')[0].reset();
+                            $('#table').DataTable().ajax.reload();
+                        } else {
+                            toastr.error('⚠ Failed!');
+                        }
+                    }
+                });
+            } else {
+                event.dismiss;
+            }
+        }, function (dismiss) {
+            return false;
+        });
+    }
 </script>
 @endpush

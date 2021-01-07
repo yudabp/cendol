@@ -24,6 +24,9 @@ Route::group(['middleware' => 'auth'], function () {
     // Dashboard
     Route::get('/secret', [DashboardController::class, 'index'])->name('dashboard');
     Route::post('/secret', [DashboardController::class, 'store'])->name('store');
+    Route::get('/secret/edit/{id}', [DashboardController::class, 'edit']);
+    Route::post('/secret/update', [DashboardController::class, 'update'])->name('update');
+    Route::post('/secret/delete/{id}', [DashboardController::class, 'delete']);
 });
 
 // Logout

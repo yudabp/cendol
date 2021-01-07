@@ -11,48 +11,16 @@
                     <thead class="text-center">
                         <tr>
                             <th>#</th>
-                            <th>Name</th>
-                            <th>Phone</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>1st Place</th>
+                            <th>2nd Place</th>
+                            <th>3rd Place</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
                     <tbody class="text-center">
-                        <tr>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                        </tr>
-                        <tr>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                        </tr>
-                        <tr>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                        </tr>
-                        <tr>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                        </tr>
-                        <tr>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                        </tr>
-                        <tr>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                        </tr>
+                        
                     </tbody>
                 </table>
             </div>
@@ -72,6 +40,34 @@
     $(document).ready(function () {
         $('#table').DataTable({
             'ordering': false,
+            processing: true,
+            serverSide: true,
+            ajax: {
+                url: "{{ route('dashboard') }}",
+            },
+            columns: [{
+                data: 'DT_RowIndex',
+                name: 'DT_RowIndex'
+            }, {
+                data: 'tanggal',
+                name: 'tanggal'
+            }, {
+                data: 'waktu',
+                name: 'waktu'
+            }, {
+                data: 'no_satu',
+                name: 'no_satu'
+            }, {
+                data: 'no_dua',
+                name: 'no_dua'
+            }, {
+                data: 'no_tiga',
+                name: 'no_tiga'
+            }, {
+                data: 'action',
+                name: 'action',
+            } 
+            ]
         });
     });
 </script>

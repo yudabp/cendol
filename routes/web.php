@@ -27,3 +27,18 @@ Route::group(['middleware' => 'auth'], function () {
 
 // Logout
 Route::post('/logout', [LogoutController::class, 'store'])->name('logout');
+
+Route::view('/about-us', 'pages.about');
+Route::view('/affiliate', 'pages.affiliate');
+Route::view('/awards', 'pages.awards');
+Route::view('/play', 'pages.play');
+Route::view('/lottery', 'pages.lottery');
+Route::view('/tournaments', 'pages.tournaments');
+Route::view('/bonus', 'pages.bonus');
+Route::view('/faq', 'pages.faq');
+Route::view('/how-it-work', 'pages.how-it-work');
+Route::view('/terms-conditions', 'pages.terms-conditions');
+Route::view('/contact', 'pages.contact');
+Route::view('/cart', 'pages.cart');
+Route::view('/test', 'pages.test');
+Route::view('/result', 'pages.result');

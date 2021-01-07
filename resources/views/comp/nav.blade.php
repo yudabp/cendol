@@ -1,6 +1,6 @@
 <div class="dashboard-header">
     <nav class="navbar navbar-expand-lg bg-white fixed-top">
-        <a class="navbar-brand" href="{{ route('dashboard') }}">Laravel 6 Default Project</a>
+        <a class="navbar-brand" href="{{ route('dashboard') }}">Alaska 6D Admin Dashboard</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -17,7 +17,7 @@
                     </a>
                     <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">
                         <div class="nav-user-info">
-                            <h5 class="mb-0 text-white nav-user-name">{{ auth()->user()->name }}</h5>
+                            <h5 class="mb-0 text-white nav-user-name">Welcome {{ auth()->user()->username }}!</h5>
                         </div>
                         <a class="dropdown-item" href="#"><i class="fas fa-cog mr-2"></i>Setting</a>
                         <form action="{{ route('logout') }}" method="POST">

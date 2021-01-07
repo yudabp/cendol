@@ -23,6 +23,7 @@ Route::get('/', [DepanController::class, 'index'])->name('index');
 Route::group(['middleware' => 'auth'], function () {
     // Dashboard
     Route::get('/secret', [DashboardController::class, 'index'])->name('dashboard');
+    Route::post('/secret', [DashboardController::class, 'store'])->name('store');
 });
 
 // Logout

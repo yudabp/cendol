@@ -64,19 +64,19 @@
                         <div class="col">
                             <div class="form-group">
                                 <label class="control-label">1st Winner:</label>
-                                <input type="text" name="no_satu" id="no_satu" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" maxlength="4" minlength="4" placeholder="0000" autocomplete="off">
+                                <input type="text" name="no_satu" id="no_satu" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" maxlength="6" minlength="6" placeholder="000000" autocomplete="off">
                             </div>
                         </div>
                         <div class="col">
                             <div class="form-group">
                                 <label class="control-label">2nd Winner:</label>
-                                <input type="text" name="no_dua" id="no_dua" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" maxlength="4" minlength="4" placeholder="0000" autocomplete="off">
+                                <input type="text" name="no_dua" id="no_dua" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" maxlength="6" minlength="6" placeholder="000000" autocomplete="off">
                             </div>
                         </div>
                         <div class="col">
                             <div class="form-group">
                                 <label class="control-label">3rd Winner:</label>
-                                <input type="text" name="no_tiga" id="no_tiga" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" maxlength="4" minlength="4" placeholder="0000" autocomplete="off">
+                                <input type="text" name="no_tiga" id="no_tiga" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" maxlength="6" minlength="6" placeholder="000000" autocomplete="off">
                             </div>
                         </div>
                     </div>

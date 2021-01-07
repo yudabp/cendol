@@ -56,105 +56,6 @@
 							<div class="right-content">
 								<ul class="right-list">
 									<li>
-										<div class="cart-icon tm-dropdown">
-											<i class="fas fa-cart-arrow-down"></i>
-											<span class="cart-count">10</span>
-											<div class="tm-dropdown-menu">
-												<ul class="list">
-													<li class="list-item">
-															<div class="close">
-																	<i class="fas fa-times"></i>
-															</div>
-														<ul class="number-list">
-															<li>24</li>
-															<li>25</li>
-															<li>26</li>
-															<li>27</li>
-															<li>28</li>
-														</ul>
-													</li>
-													<li class="list-item">
-															<div class="close">
-																	<i class="fas fa-times"></i>
-															</div>
-														<ul class="number-list">
-															<li>24</li>
-															<li>25</li>
-															<li>26</li>
-															<li>27</li>
-															<li>28</li>
-														</ul>
-													</li>
-													<li class="list-item">
-															<div class="close">
-																	<i class="fas fa-times"></i>
-															</div>
-														<ul class="number-list">
-															<li>24</li>
-															<li>25</li>
-															<li>26</li>
-															<li>27</li>
-															<li>28</li>
-														</ul>
-													</li>
-													<li class="list-item">
-														<div class="close">
-																<i class="fas fa-times"></i>
-														</div>
-														<ul class="number-list">
-															<li>24</li>
-															<li>25</li>
-															<li>26</li>
-															<li>27</li>
-															<li>28</li>
-														</ul>
-													</li>
-												</ul>
-												<a href="cart.html" class="link-btn">Cart Page</a>
-											</div>
-										</div>
-									</li>
-									<li>
-										<div class="notofication tm-dropdown">
-											<i class="fas fa-bell"></i>
-											<span class="count">11</span>
-											<div class="tm-dropdown-menu">
-													<ul class="list">
-														<li>
-															<a href="#">
-																<i class="fas fa-bell"></i>
-																Invest Exchange
-															</a>
-														</li>
-														<li>
-															<a href="#">
-																<i class="fas fa-bell"></i>
-																Invest Exchange
-															</a>
-														</li>
-														<li>
-															<a href="#">
-																<i class="fas fa-bell"></i>
-																Invest Exchange
-															</a>
-														</li>
-														<li>
-															<a href="#">
-																<i class="fas fa-bell"></i>
-																Invest Exchange
-															</a>
-														</li>
-														<li>
-															<a href="#">
-																<i class="fas fa-bell"></i>
-																Invest Exchange
-															</a>
-														</li>
-													</ul>
-												</div>
-										</div>
-									</li>
-									<li>
 										<a href="#" class="sign-in" data-toggle="modal" data-target="#login">
 											<i class="fas fa-user"></i> Sign In
 										</a>
@@ -189,40 +90,6 @@
 										<a class="nav-link" href="{{ url('result') }}">Result
 												<div class="mr-hover-effect"></div></a>
 									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="{{ url('play') }}">Play
-												<div class="mr-hover-effect"></div></a>
-									</li>
-									
-									<zli class="nav-item">
-										<a class="nav-link" href="{{ url('lottery') }}">lottery
-												<div class="mr-hover-effect"></div></a>
-									</zli>
-									<li class="nav-item">
-										<a class="nav-link" href="{{ url('tournaments') }}">tournaments
-												<div class="mr-hover-effect"></div></a>
-									</li>
-									<li class="nav-item dropdown">
-										<a class="nav-link dropdown-toggle" href="#"  role="button" data-toggle="dropdown" aria-haspopup="true"
-											aria-expanded="false">
-											Pages
-											<div class="mr-hover-effect"></div>
-										</a>
-										<ul class="dropdown-menu" >
-											<li><a class="dropdown-item" href="{{ url('about-us') }}"> <i class="fa fa-angle-double-right"></i>About</a></li>
-											<li><a class="dropdown-item" href="{{ url('affiliate') }}"> <i class="fa fa-angle-double-right"></i>Affiliate</a></li>
-											<li><a class="dropdown-item" href="{{ url('awards') }}"> <i class="fa fa-angle-double-right"></i>Awards</a></li>
-											<li><a class="dropdown-item" href="{{ url('bonus') }}"> <i class="fa fa-angle-double-right"></i>Bonus</a></li>
-											<li><a class="dropdown-item" href="{{ url('cart') }}"> <i class="fa fa-angle-double-right"></i>Cart</a></li>
-											<li><a class="dropdown-item" href="{{ url('faq') }}"> <i class="fa fa-angle-double-right"></i>Faq</a></li>
-											<li><a class="dropdown-item" href="{{ url('how-it-work') }}"> <i class="fa fa-angle-double-right"></i>How It Work</a></li>
-											<li><a class="dropdown-item" href="{{ url('terms-conditions') }}"> <i class="fa fa-angle-double-right"></i>Terms & Condition</a></li>
-										</ul>
-									</li>
-									<li class="nav-item">
-											<a class="nav-link" href="{{ url('contact') }}">Contact
-													<div class="mr-hover-effect"></div></a>
-										</li>
 								</ul>
 								<a href="#" class="mybtn1"  data-toggle="modal" data-target="#signin"> Join us</a>
 							</div>
@@ -239,47 +106,6 @@
 
 	<!-- Footer Area Start -->
 	<footer class="footer" id="footer">
-		<div class="subscribe-area">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="subscribe-box">
-								<form action="#">
-							<div class="row">
-								<div class="col-lg-12">
-									<div class="heading-area">
-											<h5 class="sub-title">
-													subscribe to Dooplo
-											</h5>
-											<h4 class="title">
-													To Get Exclusive Benefits
-											</h4>
-									</div>
-								</div>
-								<div class="col-lg-3 col-4 d-flex align-self-center">
-									<div class="icon">
-										<img src="{{ asset('assets/images/mail-box.png') }}" alt="">
-									</div>
-								</div>
-								<div class="col-lg-6 col-8 d-flex align-self-center">
-									<div class="form-area">
-											<input type="text" placeholder="Your Email Address">
-									</div>
-								</div>
-								<div class="col-lg-3 d-flex align-self-center">
-									<div class="button-area">
-										<button class="mybtn1" type="submit">Subscribe
-											<span><i class="fas fa-paper-plane"></i></span>
-										</button>
-									</div>
-								</div>
-							</div>
-						</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-6 col-lg-3">

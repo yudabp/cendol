@@ -44,7 +44,7 @@
 							Try to check out our
 						</h5>
 						<h2 class="title">
-							Tournaments!
+							Result
 						</h2>
 						<p class="text">
 							Dooplo Tournaments are exciting slot competitions. The goal is to win as many points within a

@@ -19,6 +19,13 @@
                 @enderror
             </div>
             <div class="form-group">
+                <input class="form-control form-control-lg @error('username') is-invalid @enderror" type="text" name="username" placeholder="Your username" autocomplete="off" value="{{ old('username') }}" @error('username') autofocus @enderror>
+
+                @error('username')
+                <strong class="text-danger">{{ $message }}</strong>
+                @enderror
+            </div>
+            <div class="form-group">
                 <input class="form-control form-control-lg @error('email') is-invalid @enderror" type="email" name="email" placeholder="E-mail Address" autocomplete="off" value="{{ old('email') }}" @error('email') autofocus @enderror>
 
                 @error('email')

@@ -17,9 +17,9 @@
                 </div>
             @endif
             <div class="form-group">
-                <input class="form-control form-control-lg @error('email') is-invalid @enderror" type="email" name="email" placeholder="Your E-mail" autocomplete="off" value="{{ old('email') }}" @error('email') autofocus @enderror>
+                <input class="form-control form-control-lg @error('username') is-invalid @enderror" type="text" name="username" placeholder="Username" autocomplete="off" value="{{ old('username') }}" @error('username') autofocus @enderror>
 
-                @error('email')
+                @error('username')
                 <strong class="text-danger">{{ $message }}</strong>
                 @enderror
             </div>

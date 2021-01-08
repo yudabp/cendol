@@ -3,25 +3,23 @@
 @section('title', 'Home')
 
 @section('content')
-
 	<!-- Featured Game Area Start -->
 	<section class="featured-game"  style="height: 700px;">
-
 		<div class="container" style="position:relative;top:180px;max-width:2000px;">
 			<div class="row justify-content-center pt-20">
-				<div class="col-lg-12 d-flex align-self-center">
-					<!-- <div class="section-heading">
+				<!-- <div class="col-lg-12 d-flex align-self-center">
+					<div class="section-heading">
 						<h5 class="subtitle">
-								Try to check out our
+							Try to check out our
 						</h5> 
 						<h2 class="title">
-								featured games
+							featured games
 						</h2>
 						<p class="text">
-								Check out our latest featured game! To meet today's challenges & earn cryptocurrency. Top 10 players receive prizes every hour!
+							Check out our latest featured game! To meet today's challenges & earn cryptocurrency. Top 10 players receive prizes every hour!
 						</p>
-					</div> -->
-				</div>
+					</div>
+				</div> -->
 			</div>
 			<div class="row">
 				<div class="col-lg-12 d-flex align-self-center">
@@ -34,20 +32,20 @@
 						</div>
 						<div class="item">
 							<div class="single-game">
-									<img src="{{ asset('assets/images/game/icon2.png') }}" alt="">
-									<a href="#" class="mybtn2">PLay NoW !</a>
+								<img src="{{ asset('assets/images/game/icon2.png') }}" alt="">
+								<a href="#" class="mybtn2">PLay NoW !</a>
 							</div>
 						</div>
 						<div class="item">
 							<div class="single-game">
-									<img src="{{ asset('assets/images/game/icon3.png') }}" alt="">
-									<a href="#" class="mybtn2">PLay NoW !</a>
+								<img src="{{ asset('assets/images/game/icon3.png') }}" alt="">
+								<a href="#" class="mybtn2">PLay NoW !</a>
 							</div>
 						</div>
 						<div class="item">
 							<div class="single-game">
-									<img src="{{ asset('assets/images/game/icon2.png') }}" alt="">
-									<a href="#" class="mybtn2">PLay NoW !</a>
+								<img src="{{ asset('assets/images/game/icon2.png') }}" alt="">
+								<a href="#" class="mybtn2">PLay NoW !</a>
 							</div>
 						</div>
 					</div>
@@ -110,7 +108,7 @@
 											</div>
 											<div class="content">
 												<h4 class="title">
-														Juara 3
+													Juara 3
 												</h4>
 												<a href="#" class="link">read more <i class="fas fa-arrow-right"></i></a>
 											</div>
@@ -124,7 +122,6 @@
 			</div>
 		</div>
 		<!-- Features Area End -->
-		
 	</section>
 	<!-- Featured Game Area	End -->
 
@@ -136,29 +133,27 @@
 					<div class="col-lg-12">
 						<div class="draw-time">
 							<h5 class="subtitle">
-									Lottery Draw Starts In:
+								Lottery Draw Starts In:
 							</h5>
 							<div class="draw-counter">
-									<div>Iklan</div>
+								<div>Iklan</div>
 							</div>
 							<p class="text">
-									To meet Today's challenges
+								To meet Today's challenges
 							</p>
 						</div>
 					</div>
 				</div>
-				
 			</div>
 		</div>
 	</section>
 	<!-- Lottery Staticstics  Area End -->
 
-
 	<!-- Latest Activities Area Start -->
 	 <section class="activities" style="padding: 50px 0px 50px;">
-		 <img class="shape shape1" src="{{ asset('assets/images/people/shape1.png') }}" alt="">
-		 <img class="shape shape2" src="{{ asset('assets/images/people/shape2.png') }}" alt="">
-		 <img class="shape shape3" src="{{ asset('assets/images/people/shape3.png') }}" alt="">
+		<img class="shape shape1" src="{{ asset('assets/images/people/shape1.png') }}" alt="">
+		<img class="shape shape2" src="{{ asset('assets/images/people/shape2.png') }}" alt="">
+		<img class="shape shape3" src="{{ asset('assets/images/people/shape3.png') }}" alt="">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-8 col-md-10">
@@ -182,625 +177,625 @@
 						<div class="tab-pane fade show active" id="pills-all-bets" role="tabpanel" aria-labelledby="pills-all-bets-tab">
 							<div class="responsive-table">
 								<table class="table">
-								<thead>
-									<tr>
-									<th scope="col">USER</th>
-									<th scope="col">BET ID</th>
-									<th scope="col">BET AMOUNT</th>
-									<th scope="col">CHANCE</th>
-									<th scope="col">GAME</th>
-									<th scope="col">PROFIT</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>
-											<img src="{{ asset('assets/images/people/p1.png') }}" alt="">
-											Tom Bass
-										</td>
-										<td>
-											b799b8724b
-										</td>
-										<td>
-											<img src="{{ asset('assets/images/icon1.png') }}" alt="">
-											0.00000051
-										</td>
-										<td>70%</td>
-										<td>Dice</td>
-										<td>
-											<img src="{{ asset('assets/images/icon1.png') }}" alt="">
-											0.00000051
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<img src="{{ asset('assets/images/people/p2.png') }}" alt="">
-											Tom Bass
-										</td>
-										<td>
-											b799b8724b
-										</td>
-										<td>
-											<img src="{{ asset('assets/images/icon2.png') }}" alt="">
-											0.00000051
-										</td>
-										<td>70%</td>
-										<td>Dice</td>
-										<td>
-											<img src="{{ asset('assets/images/icon2.png') }}" alt="">
-											0.00000051
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<img src="{{ asset('assets/images/people/p3.png') }}" alt="">
-											Tom Bass
-										</td>
-										<td>
-											b799b8724b
-										</td>
-										<td>
-											<img src="{{ asset('assets/images/icon3.png') }}" alt="">
-											0.00000051
-										</td>
-										<td>70%</td>
-										<td>Dice</td>
-										<td>
-											<img src="{{ asset('assets/images/icon3.png') }}" alt="">
-											0.00000051
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<img src="{{ asset('assets/images/people/p4.png') }}" alt="">
-											Tom Bass
-										</td>
-										<td>
-											b799b8724b
-										</td>
-										<td>
-											<img src="{{ asset('assets/images/icon4.png') }}" alt="">
-											0.00000051
-										</td>
-										<td>70%</td>
-										<td>Dice</td>
-										<td>
-											<img src="{{ asset('assets/images/icon4.png') }}" alt="">
-											0.00000051
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<img src="{{ asset('assets/images/people/p5.png') }}" alt="">
-											Tom Bass
-										</td>
-										<td>
-											b799b8724b
-										</td>
-										<td>
-											<img src="{{ asset('assets/images/icon5.png') }}" alt="">
-											0.00000051
-										</td>
-										<td>70%</td>
-										<td>Dice</td>
-										<td>
-											<img src="{{ asset('assets/images/icon5.png') }}" alt="">
-											0.00000051
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<img src="{{ asset('assets/images/people/p6.png') }}" alt="">
-											Tom Bass
-										</td>
-										<td>
-											b799b8724b
-										</td>
-										<td>
-											<img src="{{ asset('assets/images/icon1.png') }}" alt="">
-											0.00000051
-										</td>
-										<td>70%</td>
-										<td>Dice</td>
-										<td>
-											<img src="{{ asset('assets/images/icon1.png') }}" alt="">
-											0.00000051
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<img src="{{ asset('assets/images/people/p1.png') }}" alt="">
-											Tom Bass
-										</td>
-										<td>
-											b799b8724b
-										</td>
-										<td>
-											<img src="{{ asset('assets/images/icon2.png') }}" alt="">
-											0.00000051
-										</td>
-										<td>70%</td>
-										<td>Dice</td>
-										<td>
-											<img src="{{ asset('assets/images/icon2.png') }}" alt="">
-											0.00000051
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<img src="{{ asset('assets/images/people/p2.png') }}" alt="">
-											Tom Bass
-										</td>
-										<td>
-											b799b8724b
-										</td>
-										<td>
-											<img src="{{ asset('assets/images/icon3.png') }}" alt="">
-											0.00000051
-										</td>
-										<td>70%</td>
-										<td>Dice</td>
-										<td>
-											<img src="{{ asset('assets/images/icon3.png') }}" alt="">
-											0.00000051
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<img src="{{ asset('assets/images/people/p3.png') }}" alt="">
-											Tom Bass
-										</td>
-										<td>
-											b799b8724b
-										</td>
-										<td>
-											<img src="{{ asset('assets/images/icon4.png') }}" alt="">
-											0.00000051
-										</td>
-										<td>70%</td>
-										<td>Dice</td>
-										<td>
-											<img src="{{ asset('assets/images/icon4.png') }}" alt="">
-											0.00000051
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<img src="{{ asset('assets/images/people/p4.png') }}" alt="">
-											Tom Bass
-										</td>
-										<td>
-											b799b8724b
-										</td>
-										<td>
-											<img src="{{ asset('assets/images/icon5.png') }}" alt="">
-											0.00000051
-										</td>
-										<td>70%</td>
-										<td>Dice</td>
-										<td>
-											<img src="{{ asset('assets/images/icon5.png') }}" alt="">
-											0.00000051
-										</td>
-									</tr>
-								</tbody>
+									<thead>
+										<tr>
+										<th scope="col">USER</th>
+										<th scope="col">BET ID</th>
+										<th scope="col">BET AMOUNT</th>
+										<th scope="col">CHANCE</th>
+										<th scope="col">GAME</th>
+										<th scope="col">PROFIT</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<img src="{{ asset('assets/images/people/p1.png') }}" alt="">
+												Tom Bass
+											</td>
+											<td>
+												b799b8724b
+											</td>
+											<td>
+												<img src="{{ asset('assets/images/icon1.png') }}" alt="">
+												0.00000051
+											</td>
+											<td>70%</td>
+											<td>Dice</td>
+											<td>
+												<img src="{{ asset('assets/images/icon1.png') }}" alt="">
+												0.00000051
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="{{ asset('assets/images/people/p2.png') }}" alt="">
+												Tom Bass
+											</td>
+											<td>
+												b799b8724b
+											</td>
+											<td>
+												<img src="{{ asset('assets/images/icon2.png') }}" alt="">
+												0.00000051
+											</td>
+											<td>70%</td>
+											<td>Dice</td>
+											<td>
+												<img src="{{ asset('assets/images/icon2.png') }}" alt="">
+												0.00000051
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="{{ asset('assets/images/people/p3.png') }}" alt="">
+												Tom Bass
+											</td>
+											<td>
+												b799b8724b
+											</td>
+											<td>
+												<img src="{{ asset('assets/images/icon3.png') }}" alt="">
+												0.00000051
+											</td>
+											<td>70%</td>
+											<td>Dice</td>
+											<td>
+												<img src="{{ asset('assets/images/icon3.png') }}" alt="">
+												0.00000051
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="{{ asset('assets/images/people/p4.png') }}" alt="">
+												Tom Bass
+											</td>
+											<td>
+												b799b8724b
+											</td>
+											<td>
+												<img src="{{ asset('assets/images/icon4.png') }}" alt="">
+												0.00000051
+											</td>
+											<td>70%</td>
+											<td>Dice</td>
+											<td>
+												<img src="{{ asset('assets/images/icon4.png') }}" alt="">
+												0.00000051
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="{{ asset('assets/images/people/p5.png') }}" alt="">
+												Tom Bass
+											</td>
+											<td>
+												b799b8724b
+											</td>
+											<td>
+												<img src="{{ asset('assets/images/icon5.png') }}" alt="">
+												0.00000051
+											</td>
+											<td>70%</td>
+											<td>Dice</td>
+											<td>
+												<img src="{{ asset('assets/images/icon5.png') }}" alt="">
+												0.00000051
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="{{ asset('assets/images/people/p6.png') }}" alt="">
+												Tom Bass
+											</td>
+											<td>
+												b799b8724b
+											</td>
+											<td>
+												<img src="{{ asset('assets/images/icon1.png') }}" alt="">
+												0.00000051
+											</td>
+											<td>70%</td>
+											<td>Dice</td>
+											<td>
+												<img src="{{ asset('assets/images/icon1.png') }}" alt="">
+												0.00000051
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="{{ asset('assets/images/people/p1.png') }}" alt="">
+												Tom Bass
+											</td>
+											<td>
+												b799b8724b
+											</td>
+											<td>
+												<img src="{{ asset('assets/images/icon2.png') }}" alt="">
+												0.00000051
+											</td>
+											<td>70%</td>
+											<td>Dice</td>
+											<td>
+												<img src="{{ asset('assets/images/icon2.png') }}" alt="">
+												0.00000051
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="{{ asset('assets/images/people/p2.png') }}" alt="">
+												Tom Bass
+											</td>
+											<td>
+												b799b8724b
+											</td>
+											<td>
+												<img src="{{ asset('assets/images/icon3.png') }}" alt="">
+												0.00000051
+											</td>
+											<td>70%</td>
+											<td>Dice</td>
+											<td>
+												<img src="{{ asset('assets/images/icon3.png') }}" alt="">
+												0.00000051
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="{{ asset('assets/images/people/p3.png') }}" alt="">
+												Tom Bass
+											</td>
+											<td>
+												b799b8724b
+											</td>
+											<td>
+												<img src="{{ asset('assets/images/icon4.png') }}" alt="">
+												0.00000051
+											</td>
+											<td>70%</td>
+											<td>Dice</td>
+											<td>
+												<img src="{{ asset('assets/images/icon4.png') }}" alt="">
+												0.00000051
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="{{ asset('assets/images/people/p4.png') }}" alt="">
+												Tom Bass
+											</td>
+											<td>
+												b799b8724b
+											</td>
+											<td>
+												<img src="{{ asset('assets/images/icon5.png') }}" alt="">
+												0.00000051
+											</td>
+											<td>70%</td>
+											<td>Dice</td>
+											<td>
+												<img src="{{ asset('assets/images/icon5.png') }}" alt="">
+												0.00000051
+											</td>
+										</tr>
+									</tbody>
 								</table>
 							</div>
 						</div>
 						<div class="tab-pane fade" id="pills-my-bets" role="tabpanel" aria-labelledby="pills-my-bets-tab">
 							<div class="responsive-table">
-									<table class="table">
-											<thead>
-												<tr>
-												<th scope="col">USER</th>
-												<th scope="col">BET ID</th>
-												<th scope="col">BET AMOUNT</th>
-												<th scope="col">CHANCE</th>
-												<th scope="col">GAME</th>
-												<th scope="col">PROFIT</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>
-														<img src="{{ asset('assets/images/people/p1.png') }}" alt="">
-														Tom Bass
-													</td>
-													<td>
-														b799b8724b
-													</td>
-													<td>
-														<img src="{{ asset('assets/images/icon1.png') }}" alt="">
-														0.00000051
-													</td>
-													<td>70%</td>
-													<td>Dice</td>
-													<td>
-														<img src="{{ asset('assets/images/icon1.png') }}" alt="">
-														0.00000051
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<img src="{{ asset('assets/images/people/p2.png') }}" alt="">
-														Tom Bass
-													</td>
-													<td>
-														b799b8724b
-													</td>
-													<td>
-														<img src="{{ asset('assets/images/icon2.png') }}" alt="">
-														0.00000051
-													</td>
-													<td>70%</td>
-													<td>Dice</td>
-													<td>
-														<img src="{{ asset('assets/images/icon2.png') }}" alt="">
-														0.00000051
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<img src="{{ asset('assets/images/people/p3.png') }}" alt="">
-														Tom Bass
-													</td>
-													<td>
-														b799b8724b
-													</td>
-													<td>
-														<img src="{{ asset('assets/images/icon3.png') }}" alt="">
-														0.00000051
-													</td>
-													<td>70%</td>
-													<td>Dice</td>
-													<td>
-														<img src="{{ asset('assets/images/icon3.png') }}" alt="">
-														0.00000051
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<img src="{{ asset('assets/images/people/p4.png') }}" alt="">
-														Tom Bass
-													</td>
-													<td>
-														b799b8724b
-													</td>
-													<td>
-														<img src="{{ asset('assets/images/icon4.png') }}" alt="">
-														0.00000051
-													</td>
-													<td>70%</td>
-													<td>Dice</td>
-													<td>
-														<img src="{{ asset('assets/images/icon4.png') }}" alt="">
-														0.00000051
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<img src="{{ asset('assets/images/people/p5.png') }}" alt="">
-														Tom Bass
-													</td>
-													<td>
-														b799b8724b
-													</td>
-													<td>
-														<img src="{{ asset('assets/images/icon5.png') }}" alt="">
-														0.00000051
-													</td>
-													<td>70%</td>
-													<td>Dice</td>
-													<td>
-														<img src="{{ asset('assets/images/icon5.png') }}" alt="">
-														0.00000051
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<img src="{{ asset('assets/images/people/p6.png') }}" alt="">
-														Tom Bass
-													</td>
-													<td>
-														b799b8724b
-													</td>
-													<td>
-														<img src="{{ asset('assets/images/icon1.png') }}" alt="">
-														0.00000051
-													</td>
-													<td>70%</td>
-													<td>Dice</td>
-													<td>
-														<img src="{{ asset('assets/images/icon1.png') }}" alt="">
-														0.00000051
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<img src="{{ asset('assets/images/people/p1.png') }}" alt="">
-														Tom Bass
-													</td>
-													<td>
-														b799b8724b
-													</td>
-													<td>
-														<img src="{{ asset('assets/images/icon2.png') }}" alt="">
-														0.00000051
-													</td>
-													<td>70%</td>
-													<td>Dice</td>
-													<td>
-														<img src="{{ asset('assets/images/icon2.png') }}" alt="">
-														0.00000051
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<img src="{{ asset('assets/images/people/p2.png') }}" alt="">
-														Tom Bass
-													</td>
-													<td>
-														b799b8724b
-													</td>
-													<td>
-														<img src="{{ asset('assets/images/icon3.png') }}" alt="">
-														0.00000051
-													</td>
-													<td>70%</td>
-													<td>Dice</td>
-													<td>
-														<img src="{{ asset('assets/images/icon3.png') }}" alt="">
-														0.00000051
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<img src="{{ asset('assets/images/people/p3.png') }}" alt="">
-														Tom Bass
-													</td>
-													<td>
-														b799b8724b
-													</td>
-													<td>
-														<img src="{{ asset('assets/images/icon4.png') }}" alt="">
-														0.00000051
-													</td>
-													<td>70%</td>
-													<td>Dice</td>
-													<td>
-														<img src="{{ asset('assets/images/icon4.png') }}" alt="">
-														0.00000051
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<img src="{{ asset('assets/images/people/p4.png') }}" alt="">
-														Tom Bass
-													</td>
-													<td>
-														b799b8724b
-													</td>
-													<td>
-														<img src="{{ asset('assets/images/icon5.png') }}" alt="">
-														0.00000051
-													</td>
-													<td>70%</td>
-													<td>Dice</td>
-													<td>
-														<img src="{{ asset('assets/images/icon5.png') }}" alt="">
-														0.00000051
-													</td>
-												</tr>
-											</tbody>
-											</table>
+								<table class="table">
+									<thead>
+										<tr>
+										<th scope="col">USER</th>
+										<th scope="col">BET ID</th>
+										<th scope="col">BET AMOUNT</th>
+										<th scope="col">CHANCE</th>
+										<th scope="col">GAME</th>
+										<th scope="col">PROFIT</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<img src="{{ asset('assets/images/people/p1.png') }}" alt="">
+												Tom Bass
+											</td>
+											<td>
+												b799b8724b
+											</td>
+											<td>
+												<img src="{{ asset('assets/images/icon1.png') }}" alt="">
+												0.00000051
+											</td>
+											<td>70%</td>
+											<td>Dice</td>
+											<td>
+												<img src="{{ asset('assets/images/icon1.png') }}" alt="">
+												0.00000051
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="{{ asset('assets/images/people/p2.png') }}" alt="">
+												Tom Bass
+											</td>
+											<td>
+												b799b8724b
+											</td>
+											<td>
+												<img src="{{ asset('assets/images/icon2.png') }}" alt="">
+												0.00000051
+											</td>
+											<td>70%</td>
+											<td>Dice</td>
+											<td>
+												<img src="{{ asset('assets/images/icon2.png') }}" alt="">
+												0.00000051
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="{{ asset('assets/images/people/p3.png') }}" alt="">
+												Tom Bass
+											</td>
+											<td>
+												b799b8724b
+											</td>
+											<td>
+												<img src="{{ asset('assets/images/icon3.png') }}" alt="">
+												0.00000051
+											</td>
+											<td>70%</td>
+											<td>Dice</td>
+											<td>
+												<img src="{{ asset('assets/images/icon3.png') }}" alt="">
+												0.00000051
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="{{ asset('assets/images/people/p4.png') }}" alt="">
+												Tom Bass
+											</td>
+											<td>
+												b799b8724b
+											</td>
+											<td>
+												<img src="{{ asset('assets/images/icon4.png') }}" alt="">
+												0.00000051
+											</td>
+											<td>70%</td>
+											<td>Dice</td>
+											<td>
+												<img src="{{ asset('assets/images/icon4.png') }}" alt="">
+												0.00000051
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="{{ asset('assets/images/people/p5.png') }}" alt="">
+												Tom Bass
+											</td>
+											<td>
+												b799b8724b
+											</td>
+											<td>
+												<img src="{{ asset('assets/images/icon5.png') }}" alt="">
+												0.00000051
+											</td>
+											<td>70%</td>
+											<td>Dice</td>
+											<td>
+												<img src="{{ asset('assets/images/icon5.png') }}" alt="">
+												0.00000051
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="{{ asset('assets/images/people/p6.png') }}" alt="">
+												Tom Bass
+											</td>
+											<td>
+												b799b8724b
+											</td>
+											<td>
+												<img src="{{ asset('assets/images/icon1.png') }}" alt="">
+												0.00000051
+											</td>
+											<td>70%</td>
+											<td>Dice</td>
+											<td>
+												<img src="{{ asset('assets/images/icon1.png') }}" alt="">
+												0.00000051
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="{{ asset('assets/images/people/p1.png') }}" alt="">
+												Tom Bass
+											</td>
+											<td>
+												b799b8724b
+											</td>
+											<td>
+												<img src="{{ asset('assets/images/icon2.png') }}" alt="">
+												0.00000051
+											</td>
+											<td>70%</td>
+											<td>Dice</td>
+											<td>
+												<img src="{{ asset('assets/images/icon2.png') }}" alt="">
+												0.00000051
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="{{ asset('assets/images/people/p2.png') }}" alt="">
+												Tom Bass
+											</td>
+											<td>
+												b799b8724b
+											</td>
+											<td>
+												<img src="{{ asset('assets/images/icon3.png') }}" alt="">
+												0.00000051
+											</td>
+											<td>70%</td>
+											<td>Dice</td>
+											<td>
+												<img src="{{ asset('assets/images/icon3.png') }}" alt="">
+												0.00000051
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="{{ asset('assets/images/people/p3.png') }}" alt="">
+												Tom Bass
+											</td>
+											<td>
+												b799b8724b
+											</td>
+											<td>
+												<img src="{{ asset('assets/images/icon4.png') }}" alt="">
+												0.00000051
+											</td>
+											<td>70%</td>
+											<td>Dice</td>
+											<td>
+												<img src="{{ asset('assets/images/icon4.png') }}" alt="">
+												0.00000051
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="{{ asset('assets/images/people/p4.png') }}" alt="">
+												Tom Bass
+											</td>
+											<td>
+												b799b8724b
+											</td>
+											<td>
+												<img src="{{ asset('assets/images/icon5.png') }}" alt="">
+												0.00000051
+											</td>
+											<td>70%</td>
+											<td>Dice</td>
+											<td>
+												<img src="{{ asset('assets/images/icon5.png') }}" alt="">
+												0.00000051
+											</td>
+										</tr>
+									</tbody>
+								</table>
 							</div>
 						</div>
 						<div class="tab-pane fade" id="pills-my-jackpots" role="tabpanel" aria-labelledby="pills-my-jackpots-tab">
 							<div class="responsive-table">
 									<table class="table">
-											<thead>
-												<tr>
-												<th scope="col">USER</th>
-												<th scope="col">BET ID</th>
-												<th scope="col">BET AMOUNT</th>
-												<th scope="col">CHANCE</th>
-												<th scope="col">GAME</th>
-												<th scope="col">PROFIT</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>
-														<img src="{{ asset('assets/images/people/p1.png') }}" alt="">
-														Tom Bass
-													</td>
-													<td>
-														b799b8724b
-													</td>
-													<td>
-														<img src="{{ asset('assets/images/icon1.png') }}" alt="">
-														0.00000051
-													</td>
-													<td>70%</td>
-													<td>Dice</td>
-													<td>
-														<img src="{{ asset('assets/images/icon1.png') }}" alt="">
-														0.00000051
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<img src="{{ asset('assets/images/people/p2.png') }}" alt="">
-														Tom Bass
-													</td>
-													<td>
-														b799b8724b
-													</td>
-													<td>
-														<img src="{{ asset('assets/images/icon2.png') }}" alt="">
-														0.00000051
-													</td>
-													<td>70%</td>
-													<td>Dice</td>
-													<td>
-														<img src="{{ asset('assets/images/icon2.png') }}" alt="">
-														0.00000051
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<img src="{{ asset('assets/images/people/p3.png') }}" alt="">
-														Tom Bass
-													</td>
-													<td>
-														b799b8724b
-													</td>
-													<td>
-														<img src="{{ asset('assets/images/icon3.png') }}" alt="">
-														0.00000051
-													</td>
-													<td>70%</td>
-													<td>Dice</td>
-													<td>
-														<img src="{{ asset('assets/images/icon3.png') }}" alt="">
-														0.00000051
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<img src="{{ asset('assets/images/people/p4.png') }}" alt="">
-														Tom Bass
-													</td>
-													<td>
-														b799b8724b
-													</td>
-													<td>
-														<img src="{{ asset('assets/images/icon4.png') }}" alt="">
-														0.00000051
-													</td>
-													<td>70%</td>
-													<td>Dice</td>
-													<td>
-														<img src="{{ asset('assets/images/icon4.png') }}" alt="">
-														0.00000051
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<img src="{{ asset('assets/images/people/p5.png') }}" alt="">
-														Tom Bass
-													</td>
-													<td>
-														b799b8724b
-													</td>
-													<td>
-														<img src="{{ asset('assets/images/icon5.png') }}" alt="">
-														0.00000051
-													</td>
-													<td>70%</td>
-													<td>Dice</td>
-													<td>
-														<img src="{{ asset('assets/images/icon5.png') }}" alt="">
-														0.00000051
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<img src="{{ asset('assets/images/people/p6.png') }}" alt="">
-														Tom Bass
-													</td>
-													<td>
-														b799b8724b
-													</td>
-													<td>
-														<img src="{{ asset('assets/images/icon1.png') }}" alt="">
-														0.00000051
-													</td>
-													<td>70%</td>
-													<td>Dice</td>
-													<td>
-														<img src="{{ asset('assets/images/icon1.png') }}" alt="">
-														0.00000051
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<img src="{{ asset('assets/images/people/p1.png') }}" alt="">
-														Tom Bass
-													</td>
-													<td>
-														b799b8724b
-													</td>
-													<td>
-														<img src="{{ asset('assets/images/icon2.png') }}" alt="">
-														0.00000051
-													</td>
-													<td>70%</td>
-													<td>Dice</td>
-													<td>
-														<img src="{{ asset('assets/images/icon2.png') }}" alt="">
-														0.00000051
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<img src="{{ asset('assets/images/people/p2.png') }}" alt="">
-														Tom Bass
-													</td>
-													<td>
-														b799b8724b
-													</td>
-													<td>
-														<img src="{{ asset('assets/images/icon3.png') }}" alt="">
-														0.00000051
-													</td>
-													<td>70%</td>
-													<td>Dice</td>
-													<td>
-														<img src="{{ asset('assets/images/icon3.png') }}" alt="">
-														0.00000051
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<img src="{{ asset('assets/images/people/p3.png') }}" alt="">
-														Tom Bass
-													</td>
-													<td>
-														b799b8724b
-													</td>
-													<td>
-														<img src="{{ asset('assets/images/icon4.png') }}" alt="">
-														0.00000051
-													</td>
-													<td>70%</td>
-													<td>Dice</td>
-													<td>
-														<img src="{{ asset('assets/images/icon4.png') }}" alt="">
-														0.00000051
-													</td>
-												</tr>
-												<tr>
-													<td>
-														<img src="{{ asset('assets/images/people/p4.png') }}" alt="">
-														Tom Bass
-													</td>
-													<td>
-														b799b8724b
-													</td>
-													<td>
-														<img src="{{ asset('assets/images/icon5.png') }}" alt="">
-														0.00000051
-													</td>
-													<td>70%</td>
-													<td>Dice</td>
-													<td>
-														<img src="{{ asset('assets/images/icon5.png') }}" alt="">
-														0.00000051
-													</td>
-												</tr>
-											</tbody>
-											</table>
+									<thead>
+										<tr>
+										<th scope="col">USER</th>
+										<th scope="col">BET ID</th>
+										<th scope="col">BET AMOUNT</th>
+										<th scope="col">CHANCE</th>
+										<th scope="col">GAME</th>
+										<th scope="col">PROFIT</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<img src="{{ asset('assets/images/people/p1.png') }}" alt="">
+												Tom Bass
+											</td>
+											<td>
+												b799b8724b
+											</td>
+											<td>
+												<img src="{{ asset('assets/images/icon1.png') }}" alt="">
+												0.00000051
+											</td>
+											<td>70%</td>
+											<td>Dice</td>
+											<td>
+												<img src="{{ asset('assets/images/icon1.png') }}" alt="">
+												0.00000051
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="{{ asset('assets/images/people/p2.png') }}" alt="">
+												Tom Bass
+											</td>
+											<td>
+												b799b8724b
+											</td>
+											<td>
+												<img src="{{ asset('assets/images/icon2.png') }}" alt="">
+												0.00000051
+											</td>
+											<td>70%</td>
+											<td>Dice</td>
+											<td>
+												<img src="{{ asset('assets/images/icon2.png') }}" alt="">
+												0.00000051
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="{{ asset('assets/images/people/p3.png') }}" alt="">
+												Tom Bass
+											</td>
+											<td>
+												b799b8724b
+											</td>
+											<td>
+												<img src="{{ asset('assets/images/icon3.png') }}" alt="">
+												0.00000051
+											</td>
+											<td>70%</td>
+											<td>Dice</td>
+											<td>
+												<img src="{{ asset('assets/images/icon3.png') }}" alt="">
+												0.00000051
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="{{ asset('assets/images/people/p4.png') }}" alt="">
+												Tom Bass
+											</td>
+											<td>
+												b799b8724b
+											</td>
+											<td>
+												<img src="{{ asset('assets/images/icon4.png') }}" alt="">
+												0.00000051
+											</td>
+											<td>70%</td>
+											<td>Dice</td>
+											<td>
+												<img src="{{ asset('assets/images/icon4.png') }}" alt="">
+												0.00000051
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="{{ asset('assets/images/people/p5.png') }}" alt="">
+												Tom Bass
+											</td>
+											<td>
+												b799b8724b
+											</td>
+											<td>
+												<img src="{{ asset('assets/images/icon5.png') }}" alt="">
+												0.00000051
+											</td>
+											<td>70%</td>
+											<td>Dice</td>
+											<td>
+												<img src="{{ asset('assets/images/icon5.png') }}" alt="">
+												0.00000051
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="{{ asset('assets/images/people/p6.png') }}" alt="">
+												Tom Bass
+											</td>
+											<td>
+												b799b8724b
+											</td>
+											<td>
+												<img src="{{ asset('assets/images/icon1.png') }}" alt="">
+												0.00000051
+											</td>
+											<td>70%</td>
+											<td>Dice</td>
+											<td>
+												<img src="{{ asset('assets/images/icon1.png') }}" alt="">
+												0.00000051
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="{{ asset('assets/images/people/p1.png') }}" alt="">
+												Tom Bass
+											</td>
+											<td>
+												b799b8724b
+											</td>
+											<td>
+												<img src="{{ asset('assets/images/icon2.png') }}" alt="">
+												0.00000051
+											</td>
+											<td>70%</td>
+											<td>Dice</td>
+											<td>
+												<img src="{{ asset('assets/images/icon2.png') }}" alt="">
+												0.00000051
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="{{ asset('assets/images/people/p2.png') }}" alt="">
+												Tom Bass
+											</td>
+											<td>
+												b799b8724b
+											</td>
+											<td>
+												<img src="{{ asset('assets/images/icon3.png') }}" alt="">
+												0.00000051
+											</td>
+											<td>70%</td>
+											<td>Dice</td>
+											<td>
+												<img src="{{ asset('assets/images/icon3.png') }}" alt="">
+												0.00000051
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="{{ asset('assets/images/people/p3.png') }}" alt="">
+												Tom Bass
+											</td>
+											<td>
+												b799b8724b
+											</td>
+											<td>
+												<img src="{{ asset('assets/images/icon4.png') }}" alt="">
+												0.00000051
+											</td>
+											<td>70%</td>
+											<td>Dice</td>
+											<td>
+												<img src="{{ asset('assets/images/icon4.png') }}" alt="">
+												0.00000051
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="{{ asset('assets/images/people/p4.png') }}" alt="">
+												Tom Bass
+											</td>
+											<td>
+												b799b8724b
+											</td>
+											<td>
+												<img src="{{ asset('assets/images/icon5.png') }}" alt="">
+												0.00000051
+											</td>
+											<td>70%</td>
+											<td>Dice</td>
+											<td>
+												<img src="{{ asset('assets/images/icon5.png') }}" alt="">
+												0.00000051
+											</td>
+										</tr>
+									</tbody>
+								</table>
 							</div>
 						</div>
 					</div>
@@ -825,34 +820,31 @@
 					<div class="col-lg-12">
 						<div class="draw-time">
 							<h5 class="subtitle">
-									Lottery Draw Starts In:
+								Lottery Draw Starts In:
 							</h5>
 							<div class="draw-counter">
-									<div>Iklan</div>
+								<div>Iklan</div>
 							</div>
 							<p class="text">
-									To meet Today's challenges
+								To meet Today's challenges
 							</p>
 						</div>
 					</div>
 				</div>
-				
 			</div>
 		</div>
 	</section>
 	<!-- Lottery Staticstics  Area End -->
-	
-	
 @endsection
 
 @section('footer')
 <script>
-		var owl = $('.game-slider');
-		owl.owlCarousel({
-			autoplay:true,
-			autoplayTimeout:1500,
-			autoplayHoverPause:true,
-			loop:true,	
-		});
-	</script>
+	var owl = $('.game-slider');
+	owl.owlCarousel({
+		autoplay:true,
+		autoplayTimeout:1500,
+		autoplayHoverPause:true,
+		loop:true,	
+	});
+</script>
 @endsection

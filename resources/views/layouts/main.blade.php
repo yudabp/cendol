@@ -21,7 +21,9 @@
 	<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/jquery.dataTables.css') }}">
 	<script>
 	$('.carousel').carousel({
-		keyboard: true
+		keyboard: true,
+		interval: 2000,
+		ride: "carousel"
 	});
 	</script>
 </head>

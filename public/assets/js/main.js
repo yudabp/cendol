@@ -27,33 +27,12 @@ $(function ($) {
     var $game_slider = $('.game-slider');
     $game_slider.owlCarousel({
         loop: true,
-        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-        nav: true,
         dots: false,
         autoplay: false,
         margin: 0,
         autoplayTimeout: 6000,
         smartSpeed: 1000,
-        responsive: {
-            0: {
-                items: 1
-            },
-            500: {
-                items: 1
-            },
-            768: {
-                items: 2
-            },
-            992: {
-                items: 3
-            },
-            1200: {
-                items: 3
-            },
-            1920: {
-                items: 3
-            }
-        }
+        
     });
 
     // payment Slider

@@ -10,7 +10,7 @@
 	<!-- favicon -->
 	<link rel="shortcut icon" href="{{ asset('assets/images/logo1.png') }}" type="image/x-icon">
 	<!-- bootstrap -->
-	<link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<!-- Plugin css -->
 	<link rel="stylesheet" href="{{ asset('assets/css/plugin.css') }}">
 
@@ -19,6 +19,11 @@
 	<!-- responsive -->
 	<link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/jquery.dataTables.css') }}">
+	<script>
+	$('.carousel').carousel({
+		keyboard: true
+	});
+	</script>
 </head>
 
 <body>

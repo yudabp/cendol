@@ -3,67 +3,29 @@
 @section('title', 'Home')
 
 @section('content')
-	<!-- Featured Game Area Start -->
-	<section class="featured-game"  style="height: 700px;">
-		<div class="container" style="position:relative;top:180px;max-width:2000px;">
-			<div class="row justify-content-center pt-20">
-				<!-- <div class="col-lg-12 d-flex align-self-center">
-					<div class="section-heading">
-						<h5 class="subtitle">
-							Try to check out our
-						</h5> 
-						<h2 class="title">
-							featured games
-						</h2>
-						<p class="text">
-							Check out our latest featured game! To meet today's challenges & earn cryptocurrency. Top 10 players receive prizes every hour!
-						</p>
-					</div>
-				</div> -->
-			</div>
-			<div class="row">
-				<div class="col-lg-12 d-flex align-self-center">
-					<div class="game-slider">
-						<div class="item">
-							<div class="single-game">
-								<img src="{{ asset('assets/images/game/icon1.png') }}" alt="">
-								<a href="#" class="mybtn2">PLay NoW !</a>
-							</div>
-						</div>
-						<div class="item">
-							<div class="single-game">
-								<img src="{{ asset('assets/images/game/icon2.png') }}" alt="">
-								<a href="#" class="mybtn2">PLay NoW !</a>
-							</div>
-						</div>
-						<div class="item">
-							<div class="single-game">
-								<img src="{{ asset('assets/images/game/icon3.png') }}" alt="">
-								<a href="#" class="mybtn2">PLay NoW !</a>
-							</div>
-						</div>
-						<div class="item">
-							<div class="single-game">
-								<img src="{{ asset('assets/images/game/icon2.png') }}" alt="">
-								<a href="#" class="mybtn2">PLay NoW !</a>
-							</div>
-						</div>
-					</div>
+	<div class="container-fluid" style="padding-top: 100px;padding-right:0; padding-left:0;">
+		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+				<img class="d-block w-100" src="{{ asset('assets/images/about-video-bg.jpg') }}" alt="First slide" style="height:550px;">
+				</div>
+				<div class="carousel-item">
+				<img class="d-block w-100" src="{{ asset('assets/images/about-video-bg.jpg') }}" alt="Second slide" style="height:550px;">
+				</div>
+				<div class="carousel-item">
+				<img class="d-block w-100" src="{{ asset('assets/images/about-video-bg.jpg') }}" alt="Third slide" style="height:550px;">
 				</div>
 			</div>
+			<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
 		</div>
-	</section>
-	<!-- Featured Game Area	End -->
-
-	<!-- Hero Area Start -->
-	<!-- <div class="hero-area" style="padding:50px;">
-		<div class="container">
-			<div class="row">
-				<div class="col-1"></div></div>
-			</div>
-		</div>
-	</div> -->
-	<!-- Hero Area End -->
+	</div>
 
 	<!-- Featured Game Area Start -->
 	<section class="featured-game">
@@ -838,7 +800,11 @@
 @endsection
 
 @section('footer')
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script>
+	
 	var owl = $('.game-slider');
 	owl.owlCarousel({
 		autoplay:true,
@@ -846,5 +812,6 @@
 		autoplayHoverPause:true,
 		loop:true,	
 	});
+
 </script>
 @endsection

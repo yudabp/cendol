@@ -6,23 +6,33 @@
     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
         <div class="card shadow">
             <div class="card-body">
+                @if (session('status'))
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        <strong>{{ session('status') }}</strong>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                @endif
                 <button id="add" class="btn btn-sm btn-primary mb-3"><i class="fa fa-plus"></i> Add</button>
-                <table class="table table-bordered table-sm" id="table">
-                    <thead class="text-center">
-                        <tr>
-                            <th>#</th>
-                            <th>Date</th>
-                            <th>Time</th>
-                            <th>1st Place</th>
-                            <th>2nd Place</th>
-                            <th>3rd Place</th>
-                            <th>Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody class="text-center">
-                        
-                    </tbody>
-                </table>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-sm table-striped" id="table">
+                        <thead class="text-center">
+                            <tr>
+                                <th>#</th>
+                                <th>Date</th>
+                                <th>Time</th>
+                                <th>1st Place</th>
+                                <th>2nd Place</th>
+                                <th>3rd Place</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-center">
+                            
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
@@ -96,6 +106,7 @@
 
 @push('css')
 <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendor/datatables/css/dataTables.bootstrap4.min.css') }}">
+<link rel="stylesheet" href="{{ asset('css/responsive.bootstrap4.min.css') }}">
 <link rel="stylesheet" href="{{ asset('css/bootstrap-datepicker.min.css') }}">
 <link rel="stylesheet" href="{{ asset('css/toastr.min.css') }}">
 @endpush
@@ -103,6 +114,8 @@
 @push('js')
 <script src="{{ asset('assets/vendor/datatables/js/jquery.dataTables.min.js') }}"></script>
 <script src="{{ asset('assets/vendor/datatables/js/DataTables.bootstrap4.min.js') }}"></script>
+<script src="{{ asset('js/dataTables.responsive.min.js') }}"></script>
+<script src="{{ asset('js/responsive.bootstrap4.min.js') }}"></script>
 <script src="{{ asset('js/bootstrap-datepicker.min.js') }}"></script>
 <script src="{{ asset('js/toastr.min.js') }}"></script>
 <script src="{{ asset('js/sweetalert2.min.js') }}"></script>
@@ -111,6 +124,7 @@
         $('#table').DataTable({
             'ordering': false,
             processing: true,
+            responsive: true,
             serverSide: true,
             ajax: {
                 url: "{{ route('dashboard') }}",
@@ -143,7 +157,6 @@
         // Reset form when close button pressed
         $('.close').on('click', function () {
             $('#btn').removeClass('btn-info').addClass('btn-success').val('Save');
-            $('#btn').removeClass('btn-success').addClass('btn-info').val('Save');
             $('#form_result').html('');
             $('#form-number')[0].reset();
         });
@@ -213,7 +226,7 @@
             var id = $(this).attr('id');
 
             $.ajax({
-                url: '/secret/edit/'+id,
+                url: '/backend/edit/'+id,
                 dataType: 'JSON',
                 success: function (data) {
                     $('#modal-number').modal('show');
@@ -266,7 +279,7 @@
             if (event.value === true) {
                 var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
                 $.ajax({
-                    url: '/secret/delete/'+number,
+                    url: '/backend/delete/'+number,
                     type: 'POST',
                     data: { _token: CSRF_TOKEN },
                     dataType: 'JSON',

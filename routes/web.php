@@ -5,6 +5,7 @@ use App\Http\Controllers\DepanController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\LogoutController;
+use App\Http\Controllers\Auth\SettingController;
 use App\Http\Controllers\Auth\RegisterController;
 
 Route::group(['middleware' => 'guest'], function () {
@@ -22,11 +23,14 @@ Route::get('/', [DepanController::class, 'index'])->name('index');
 
 Route::group(['middleware' => 'auth'], function () {
     // Dashboard
-    Route::get('/secret', [DashboardController::class, 'index'])->name('dashboard');
-    Route::post('/secret', [DashboardController::class, 'store'])->name('store');
-    Route::get('/secret/edit/{id}', [DashboardController::class, 'edit']);
-    Route::post('/secret/update', [DashboardController::class, 'update'])->name('update');
-    Route::post('/secret/delete/{id}', [DashboardController::class, 'delete']);
+    Route::get('/backend', [DashboardController::class, 'index'])->name('dashboard');
+    Route::post('/backend', [DashboardController::class, 'store'])->name('store');
+    Route::get('/backend/edit/{id}', [DashboardController::class, 'edit']);
+    Route::post('/backend/update', [DashboardController::class, 'update'])->name('update');
+    Route::post('/backend/delete/{id}', [DashboardController::class, 'delete']);
+
+    Route::get('/backend/setting', [SettingController::class, 'index'])->name('setting');
+    Route::put('/backend/setting/update', [SettingController::class, 'update'])->name('setting-update');
 });
 
 // Logout

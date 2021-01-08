@@ -22,7 +22,8 @@ class LoginController extends Controller
         // if fails
         if (!auth()->attempt($request->only('username', 'password'))) {
             return back()
-                ->with('status', 'Username or Password wrong.');
+                ->with('status', 'Username or Password wrong.')
+                ->withInput($request->only('username'));
         }
 
         // if success redirect to admin dashboard

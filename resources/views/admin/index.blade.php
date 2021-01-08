@@ -53,9 +53,9 @@
                                 <select name="waktu" id="waktu" class="form-control" autocomplete="off">
                                     <option value="">Select Time</option>
                                     <option value="09:00:00">09:00 AM</option>
-                                    <option value="09:00:00">09:00 PM</option>
                                     <option value="11:45:00">11:45 AM</option>
-                                    <option value="07:00:00">07:00 PM</option>
+                                    <option value="19:00:00">07:00 PM</option>
+                                    <option value="21:00:00">09:00 PM</option>
                                 </select>
                             </div>
                         </div>

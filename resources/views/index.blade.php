@@ -7,13 +7,13 @@
 	<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img class="d-block w-100" src="{{ asset('assets/images/card-img-1.jpg') }}" alt="First slide" style="height:550px;">
+				<img class="d-block w-100" src="{{ asset('assets/images/city1.jpg') }}" alt="First slide" style="height:560px;">
 			</div>
 			<div class="carousel-item">
-				<img class="d-block w-100" src="{{ asset('assets/images/card-img-2.jpg') }}" alt="Second slide" style="height:550px;">
+				<img class="d-block w-100" src="{{ asset('assets/images/city2.jpg') }}" alt="Second slide" style="height:560px;">
 			</div>
 			<div class="carousel-item">
-				<img class="d-block w-100" src="{{ asset('assets/images/card-img-3.jpg') }}" alt="Third slide" style="height:550px;">
+				<img class="d-block w-100" src="{{ asset('assets/images/city3.jpg') }}" alt="Third slide" style="height:560px;">
 			</div>
 		</div>
 		<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -850,12 +850,10 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script>
-	var owl = $('.game-slider');
-	owl.owlCarousel({
-		autoplay: true,
-		autoplayTimeout: 1500,
-		autoplayHoverPause: true,
-		loop: true,
+	$('.slide').carousel({
+		keyboard: true,
+		interval: 2500,
+		ride: "carousel"
 	});
 </script>
 @endsection

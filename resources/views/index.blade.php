@@ -108,7 +108,6 @@
 											<h4 class="title">
 												Juara 1
 											</h4>
-											<a href="#" class="link">read more <i class="fas fa-arrow-right"></i></a>
 										</div>
 									</div>
 								</div>
@@ -121,7 +120,6 @@
 											<h4 class="title">
 												Juara 2
 											</h4>
-											<a href="#" class="link">read more <i class="fas fa-arrow-right"></i></a>
 										</div>
 									</div>
 								</div>
@@ -134,7 +132,6 @@
 											<h4 class="title">
 												Juara 3
 											</h4>
-											<a href="#" class="link">read more <i class="fas fa-arrow-right"></i></a>
 										</div>
 									</div>
 								</div>

@@ -2,6 +2,25 @@
 
 @section('title', 'Home')
 
+
+@section('header')
+	<style>
+		.number{
+			cursor: pointer;
+			width: 30px;
+			height: 30px;
+			font-size: 40px;
+			text-align: center;
+			line-height: 30px;
+			display: inline-block;
+			margin: 3px;
+			font-weight: 600;
+			color: #f9314b;
+			border-radius: 50%;
+		}
+	</style>
+@endsection
+
 @section('content')
 <div class="container-fluid" style="padding-right:0; padding-left:0;position:relative;top:100px;">
 	<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -102,7 +121,7 @@
 								<div class="col-lg-4 col-md-6">
 									<div class="single-feature">
 										<div class="icon one">
-											<img src="{{ asset('assets/images/feature/icon1.png') }}" alt="">
+											<img src="{{ asset('assets\images\1.png') }}" alt="" style="height:90px;">
 										</div>
 										<div class="content">
 											<h4 class="title">
@@ -114,7 +133,7 @@
 								<div class="col-lg-4 col-md-6">
 									<div class="single-feature">
 										<div class="icon two">
-											<img src="{{ asset('assets/images/feature/icon2.png') }}" alt="">
+											 <img src="{{ asset('assets\images\2.png') }}" alt="" style="height:90px;">
 										</div>
 										<div class="content">
 											<h4 class="title">
@@ -126,7 +145,7 @@
 								<div class="col-lg-4 col-md-6">
 									<div class="single-feature">
 										<div class="icon three">
-											<img src="{{ asset('assets/images/feature/icon3.png') }}" alt="">
+											<img src="{{ asset('assets\images\3.png') }}" alt="" style="height:90px;">
 										</div>
 										<div class="content">
 											<h4 class="title">

@@ -19,7 +19,7 @@
 	<!-- responsive -->
 	<link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/jquery.dataTables.css') }}">
-	
+	@yield('header')
 </head>
 
 <body>

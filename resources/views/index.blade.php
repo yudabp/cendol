@@ -125,7 +125,7 @@
 										</div>
 										<div class="content">
 											<h4 class="title">
-												Juara 1
+												8724
 											</h4>
 										</div>
 									</div>
@@ -137,7 +137,7 @@
 										</div>
 										<div class="content">
 											<h4 class="title">
-												Juara 2
+												7998
 											</h4>
 										</div>
 									</div>
@@ -149,7 +149,7 @@
 										</div>
 										<div class="content">
 											<h4 class="title">
-												Juara 3
+												5980
 											</h4>
 										</div>
 									</div>

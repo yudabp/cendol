@@ -4,21 +4,24 @@
 
 
 @section('header')
-	<style>
-		.number{
-			cursor: pointer;
-			width: 30px;
-			height: 30px;
-			font-size: 40px;
-			text-align: center;
-			line-height: 30px;
-			display: inline-block;
-			margin: 3px;
-			font-weight: 600;
-			color: #f9314b;
-			border-radius: 50%;
-		}
-	</style>
+<style>
+	.number {
+		cursor: pointer;
+		width: 30px;
+		height: 30px;
+		font-size: 40px;
+		text-align: center;
+		line-height: 30px;
+		display: inline-block;
+		margin: 3px;
+		font-weight: 600;
+		color: #f9314b;
+		border-radius: 50%;
+	}
+	.number-list li{
+		margin: 0;
+	}
+</style>
 @endsection
 
 @section('content')
@@ -121,7 +124,7 @@
 								<div class="col-lg-4 col-md-6">
 									<div class="single-feature">
 										<div class="icon one">
-											<img src="{{ asset('assets\images\1.png') }}" alt="" style="height:90px;">
+											<img src="http://neworleanslottery.com/images/1.png" alt="" style="height:90px;">
 										</div>
 										<div class="content">
 											<ul class="number-list">
@@ -129,6 +132,8 @@
 												<li>6</li>
 												<li>4</li>
 												<li>5</li>
+												<li>6</li>
+												<li>4</li>
 											</ul>
 										</div>
 									</div>
@@ -136,12 +141,14 @@
 								<div class="col-lg-4 col-md-6">
 									<div class="single-feature">
 										<div class="icon two">
-											 <img src="{{ asset('assets\images\2.png') }}" alt="" style="height:90px;">
+											<img src="http://neworleanslottery.com/images/2.png" alt="" style="height:90px;">
 										</div>
 										<div class="content">
 											<ul class="number-list">
 												<li>1</li>
 												<li>2</li>
+												<li>7</li>
+												<li>5</li>
 												<li>7</li>
 												<li>5</li>
 											</ul>
@@ -151,7 +158,7 @@
 								<div class="col-lg-4 col-md-6">
 									<div class="single-feature">
 										<div class="icon three">
-											<img src="{{ asset('assets\images\3.png') }}" alt="" style="height:90px;">
+											<img src="http://neworleanslottery.com/images/3.png" alt="" style="height:90px;">
 										</div>
 										<div class="content">
 											<ul class="number-list">
@@ -159,6 +166,8 @@
 												<li>9</li>
 												<li>4</li>
 												<li>5</li>
+												<li>9</li>
+												<li>2</li>
 											</ul>
 										</div>
 									</div>
@@ -201,206 +210,330 @@
 				<div class="tab-content" id="pills-tabContent">
 					<div class="tab-pane fade show active" id="pills-all-bets" role="tabpanel" aria-labelledby="pills-all-bets-tab">
 						<div class="responsive-table">
-							<table class="table">
+							<table class="table text-center">
 								<thead>
 									<tr>
-										<th scope="col">USER</th>
-										<th scope="col">BET ID</th>
-										<th scope="col">BET AMOUNT</th>
-										<th scope="col">CHANCE</th>
-										<th scope="col">GAME</th>
-										<th scope="col">PROFIT</th>
+										<th scope="col">DATE</th>
+										<th scope="col">MORNING</th>
+										<th scope="col">MIDDAY</th>
+										<th scope="col">EVENING</th>
+										<th scope="col">NIGHT</th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
 										<td>
-											<img src="{{ asset('assets/images/people/p1.png') }}" alt="">
-											Tom Bass
+											Jan 18
 										</td>
 										<td>
-											b799b8724b
+											<ul class="number-list">
+												<li>1</li>
+												<li>9</li>
+												<li>4</li>
+												<li>5</li>
+												<li>4</li>
+												<li>5</li>
+											</ul>
 										</td>
 										<td>
-											<img src="{{ asset('assets/images/icon1.png') }}" alt="">
-											0.00000051
-										</td>
-										<td>70%</td>
-										<td>Dice</td>
-										<td>
-											<img src="{{ asset('assets/images/icon1.png') }}" alt="">
-											0.00000051
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<img src="{{ asset('assets/images/people/p2.png') }}" alt="">
-											Tom Bass
+											<ul class="number-list">
+												<li>1</li>
+												<li>9</li>
+												<li>4</li>
+												<li>5</li>
+												<li>4</li>
+												<li>5</li>
+											</ul>
 										</td>
 										<td>
-											b799b8724b
+											<ul class="number-list">
+												<li>1</li>
+												<li>9</li>
+												<li>4</li>
+												<li>5</li>
+												<li>4</li>
+												<li>5</li>
+											</ul>
 										</td>
 										<td>
-											<img src="{{ asset('assets/images/icon2.png') }}" alt="">
-											0.00000051
-										</td>
-										<td>70%</td>
-										<td>Dice</td>
-										<td>
-											<img src="{{ asset('assets/images/icon2.png') }}" alt="">
-											0.00000051
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<img src="{{ asset('assets/images/people/p3.png') }}" alt="">
-											Tom Bass
-										</td>
-										<td>
-											b799b8724b
-										</td>
-										<td>
-											<img src="{{ asset('assets/images/icon3.png') }}" alt="">
-											0.00000051
-										</td>
-										<td>70%</td>
-										<td>Dice</td>
-										<td>
-											<img src="{{ asset('assets/images/icon3.png') }}" alt="">
-											0.00000051
+											<ul class="number-list">
+												<li>1</li>
+												<li>9</li>
+												<li>4</li>
+												<li>5</li>
+												<li>4</li>
+												<li>5</li>
+											</ul>
 										</td>
 									</tr>
 									<tr>
 										<td>
-											<img src="{{ asset('assets/images/people/p4.png') }}" alt="">
-											Tom Bass
+											Jan 17
 										</td>
 										<td>
-											b799b8724b
+											<ul class="number-list">
+												<li>1</li>
+												<li>3</li>
+												<li>9</li>
+												<li>2</li>
+												<li>4</li>
+												<li>5</li>
+											</ul>
 										</td>
 										<td>
-											<img src="{{ asset('assets/images/icon4.png') }}" alt="">
-											0.00000051
-										</td>
-										<td>70%</td>
-										<td>Dice</td>
-										<td>
-											<img src="{{ asset('assets/images/icon4.png') }}" alt="">
-											0.00000051
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<img src="{{ asset('assets/images/people/p5.png') }}" alt="">
-											Tom Bass
+											<ul class="number-list">
+												<li>9</li>
+												<li>9</li>
+												<li>4</li>
+												<li>3</li>
+												<li>4</li>
+												<li>0</li>
+											</ul>
 										</td>
 										<td>
-											b799b8724b
+											<ul class="number-list">
+												<li>9</li>
+												<li>9</li>
+												<li>0</li>
+												<li>3</li>
+												<li>5</li>
+												<li>5</li>
+											</ul>
 										</td>
 										<td>
-											<img src="{{ asset('assets/images/icon5.png') }}" alt="">
-											0.00000051
-										</td>
-										<td>70%</td>
-										<td>Dice</td>
-										<td>
-											<img src="{{ asset('assets/images/icon5.png') }}" alt="">
-											0.00000051
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<img src="{{ asset('assets/images/people/p6.png') }}" alt="">
-											Tom Bass
-										</td>
-										<td>
-											b799b8724b
-										</td>
-										<td>
-											<img src="{{ asset('assets/images/icon1.png') }}" alt="">
-											0.00000051
-										</td>
-										<td>70%</td>
-										<td>Dice</td>
-										<td>
-											<img src="{{ asset('assets/images/icon1.png') }}" alt="">
-											0.00000051
+											<ul class="number-list">
+												<li>1</li>
+												<li>9</li>
+												<li>7</li>
+												<li>2</li>
+												<li>4</li>
+												<li>6</li>
+											</ul>
 										</td>
 									</tr>
 									<tr>
 										<td>
-											<img src="{{ asset('assets/images/people/p1.png') }}" alt="">
-											Tom Bass
+											Jan 16
 										</td>
 										<td>
-											b799b8724b
+											<ul class="number-list">
+												<li>9</li>
+												<li>1</li>
+												<li>5</li>
+												<li>4</li>
+												<li>6</li>
+												<li>9</li>
+											</ul>
 										</td>
 										<td>
-											<img src="{{ asset('assets/images/icon2.png') }}" alt="">
-											0.00000051
-										</td>
-										<td>70%</td>
-										<td>Dice</td>
-										<td>
-											<img src="{{ asset('assets/images/icon2.png') }}" alt="">
-											0.00000051
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<img src="{{ asset('assets/images/people/p2.png') }}" alt="">
-											Tom Bass
+											<ul class="number-list">
+												<li>1</li>
+												<li>9</li>
+												<li>4</li>
+												<li>5</li>
+												<li>4</li>
+												<li>5</li>
+											</ul>
 										</td>
 										<td>
-											b799b8724b
+											<ul class="number-list">
+												<li>2</li>
+												<li>9</li>
+												<li>4</li>
+												<li>5</li>
+												<li>4</li>
+												<li>5</li>
+											</ul>
 										</td>
 										<td>
-											<img src="{{ asset('assets/images/icon3.png') }}" alt="">
-											0.00000051
-										</td>
-										<td>70%</td>
-										<td>Dice</td>
-										<td>
-											<img src="{{ asset('assets/images/icon3.png') }}" alt="">
-											0.00000051
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<img src="{{ asset('assets/images/people/p3.png') }}" alt="">
-											Tom Bass
-										</td>
-										<td>
-											b799b8724b
-										</td>
-										<td>
-											<img src="{{ asset('assets/images/icon4.png') }}" alt="">
-											0.00000051
-										</td>
-										<td>70%</td>
-										<td>Dice</td>
-										<td>
-											<img src="{{ asset('assets/images/icon4.png') }}" alt="">
-											0.00000051
+											<ul class="number-list">
+												<li>1</li>
+												<li>9</li>
+												<li>4</li>
+												<li>5</li>
+												<li>4</li>
+												<li>5</li>
+											</ul>
 										</td>
 									</tr>
 									<tr>
 										<td>
-											<img src="{{ asset('assets/images/people/p4.png') }}" alt="">
-											Tom Bass
+											Jan 15
 										</td>
 										<td>
-											b799b8724b
+											<ul class="number-list">
+												<li>1</li>
+												<li>9</li>
+												<li>4</li>
+												<li>5</li>
+												<li>4</li>
+												<li>5</li>
+											</ul>
 										</td>
 										<td>
-											<img src="{{ asset('assets/images/icon5.png') }}" alt="">
-											0.00000051
+											<ul class="number-list">
+												<li>1</li>
+												<li>9</li>
+												<li>4</li>
+												<li>5</li>
+												<li>4</li>
+												<li>5</li>
+											</ul>
 										</td>
-										<td>70%</td>
-										<td>Dice</td>
 										<td>
-											<img src="{{ asset('assets/images/icon5.png') }}" alt="">
-											0.00000051
+											<ul class="number-list">
+												<li>1</li>
+												<li>9</li>
+												<li>4</li>
+												<li>5</li>
+												<li>4</li>
+												<li>5</li>
+											</ul>
+										</td>
+										<td>
+											<ul class="number-list">
+												<li>1</li>
+												<li>9</li>
+												<li>4</li>
+												<li>5</li>
+												<li>4</li>
+												<li>5</li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Jan 14
+										</td>
+										<td>
+											<ul class="number-list">
+												<li>1</li>
+												<li>9</li>
+												<li>4</li>
+												<li>5</li>
+												<li>4</li>
+												<li>5</li>
+											</ul>
+										</td>
+										<td>
+											<ul class="number-list">
+												<li>1</li>
+												<li>9</li>
+												<li>4</li>
+												<li>5</li>
+												<li>4</li>
+												<li>5</li>
+											</ul>
+										</td>
+										<td>
+											<ul class="number-list">
+												<li>1</li>
+												<li>9</li>
+												<li>4</li>
+												<li>5</li>
+												<li>4</li>
+												<li>5</li>
+											</ul>
+										</td>
+										<td>
+											<ul class="number-list">
+												<li>1</li>
+												<li>9</li>
+												<li>4</li>
+												<li>5</li>
+												<li>4</li>
+												<li>5</li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Jan 13
+										</td>
+										<td>
+											<ul class="number-list">
+												<li>1</li>
+												<li>9</li>
+												<li>4</li>
+												<li>5</li>
+												<li>4</li>
+												<li>5</li>
+											</ul>
+										</td>
+										<td>
+											<ul class="number-list">
+												<li>1</li>
+												<li>9</li>
+												<li>4</li>
+												<li>5</li>
+												<li>4</li>
+												<li>5</li>
+											</ul>
+										</td>
+										<td>
+											<ul class="number-list">
+												<li>1</li>
+												<li>9</li>
+												<li>4</li>
+												<li>5</li>
+												<li>4</li>
+												<li>5</li>
+											</ul>
+										</td>
+										<td>
+											<ul class="number-list">
+												<li>1</li>
+												<li>9</li>
+												<li>4</li>
+												<li>5</li>
+												<li>4</li>
+												<li>5</li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Jan 12
+										</td>
+										<td>
+											<ul class="number-list">
+												<li>1</li>
+												<li>9</li>
+												<li>4</li>
+												<li>5</li>
+												<li>4</li>
+												<li>5</li>
+											</ul>
+										</td>
+										<td>
+											<ul class="number-list">
+												<li>1</li>
+												<li>9</li>
+												<li>4</li>
+												<li>5</li>
+												<li>4</li>
+												<li>5</li>
+											</ul>
+										</td>
+										<td>
+											<ul class="number-list">
+												<li>1</li>
+												<li>9</li>
+												<li>4</li>
+												<li>5</li>
+												<li>4</li>
+												<li>5</li>
+											</ul>
+										</td>
+										<td>
+											<ul class="number-list">
+												<li>1</li>
+												<li>9</li>
+												<li>4</li>
+												<li>5</li>
+												<li>4</li>
+												<li>5</li>
+											</ul>
 										</td>
 									</tr>
 								</tbody>
@@ -434,7 +567,6 @@
 											0.00000051
 										</td>
 										<td>70%</td>
-										<td>Dice</td>
 										<td>
 											<img src="{{ asset('assets/images/icon1.png') }}" alt="">
 											0.00000051
@@ -453,7 +585,6 @@
 											0.00000051
 										</td>
 										<td>70%</td>
-										<td>Dice</td>
 										<td>
 											<img src="{{ asset('assets/images/icon2.png') }}" alt="">
 											0.00000051
@@ -472,7 +603,6 @@
 											0.00000051
 										</td>
 										<td>70%</td>
-										<td>Dice</td>
 										<td>
 											<img src="{{ asset('assets/images/icon3.png') }}" alt="">
 											0.00000051
@@ -491,7 +621,6 @@
 											0.00000051
 										</td>
 										<td>70%</td>
-										<td>Dice</td>
 										<td>
 											<img src="{{ asset('assets/images/icon4.png') }}" alt="">
 											0.00000051
@@ -510,7 +639,6 @@
 											0.00000051
 										</td>
 										<td>70%</td>
-										<td>Dice</td>
 										<td>
 											<img src="{{ asset('assets/images/icon5.png') }}" alt="">
 											0.00000051
@@ -529,7 +657,6 @@
 											0.00000051
 										</td>
 										<td>70%</td>
-										<td>Dice</td>
 										<td>
 											<img src="{{ asset('assets/images/icon1.png') }}" alt="">
 											0.00000051
@@ -548,7 +675,6 @@
 											0.00000051
 										</td>
 										<td>70%</td>
-										<td>Dice</td>
 										<td>
 											<img src="{{ asset('assets/images/icon2.png') }}" alt="">
 											0.00000051
@@ -567,7 +693,6 @@
 											0.00000051
 										</td>
 										<td>70%</td>
-										<td>Dice</td>
 										<td>
 											<img src="{{ asset('assets/images/icon3.png') }}" alt="">
 											0.00000051
@@ -586,7 +711,6 @@
 											0.00000051
 										</td>
 										<td>70%</td>
-										<td>Dice</td>
 										<td>
 											<img src="{{ asset('assets/images/icon4.png') }}" alt="">
 											0.00000051
@@ -605,7 +729,6 @@
 											0.00000051
 										</td>
 										<td>70%</td>
-										<td>Dice</td>
 										<td>
 											<img src="{{ asset('assets/images/icon5.png') }}" alt="">
 											0.00000051
@@ -642,7 +765,6 @@
 											0.00000051
 										</td>
 										<td>70%</td>
-										<td>Dice</td>
 										<td>
 											<img src="{{ asset('assets/images/icon1.png') }}" alt="">
 											0.00000051
@@ -661,7 +783,6 @@
 											0.00000051
 										</td>
 										<td>70%</td>
-										<td>Dice</td>
 										<td>
 											<img src="{{ asset('assets/images/icon2.png') }}" alt="">
 											0.00000051
@@ -680,7 +801,6 @@
 											0.00000051
 										</td>
 										<td>70%</td>
-										<td>Dice</td>
 										<td>
 											<img src="{{ asset('assets/images/icon3.png') }}" alt="">
 											0.00000051
@@ -699,7 +819,6 @@
 											0.00000051
 										</td>
 										<td>70%</td>
-										<td>Dice</td>
 										<td>
 											<img src="{{ asset('assets/images/icon4.png') }}" alt="">
 											0.00000051
@@ -718,7 +837,6 @@
 											0.00000051
 										</td>
 										<td>70%</td>
-										<td>Dice</td>
 										<td>
 											<img src="{{ asset('assets/images/icon5.png') }}" alt="">
 											0.00000051
@@ -737,7 +855,6 @@
 											0.00000051
 										</td>
 										<td>70%</td>
-										<td>Dice</td>
 										<td>
 											<img src="{{ asset('assets/images/icon1.png') }}" alt="">
 											0.00000051
@@ -756,7 +873,6 @@
 											0.00000051
 										</td>
 										<td>70%</td>
-										<td>Dice</td>
 										<td>
 											<img src="{{ asset('assets/images/icon2.png') }}" alt="">
 											0.00000051
@@ -775,7 +891,6 @@
 											0.00000051
 										</td>
 										<td>70%</td>
-										<td>Dice</td>
 										<td>
 											<img src="{{ asset('assets/images/icon3.png') }}" alt="">
 											0.00000051
@@ -794,7 +909,6 @@
 											0.00000051
 										</td>
 										<td>70%</td>
-										<td>Dice</td>
 										<td>
 											<img src="{{ asset('assets/images/icon4.png') }}" alt="">
 											0.00000051
@@ -813,7 +927,6 @@
 											0.00000051
 										</td>
 										<td>70%</td>
-										<td>Dice</td>
 										<td>
 											<img src="{{ asset('assets/images/icon5.png') }}" alt="">
 											0.00000051
@@ -827,7 +940,7 @@
 				<div class="tab-menu-area">
 					<ul class="nav nav-lend mb-3" id="pills-tab" role="tablist">
 						<li class="nav-item">
-							<a class="nav-link" href="{{ url('result') }}">More Results</a>
+							<a class="nav-link" href="{{ url('result') }}" target="_blank">More Results</a>
 						</li>
 					</ul>
 				</div>

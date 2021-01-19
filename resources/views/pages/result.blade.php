@@ -11,7 +11,7 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<h4 class="title">
-						Result
+						History Result
 					</h4>
 					<ul class="breadcrumb-list">
 						<li>
@@ -24,7 +24,7 @@
 							<span><i class="fas fa-chevron-right"></i> </span>
 						</li>
 						<li>
-							<a href="#">Result</a>
+							<a href="#">History Result</a>
 						</li>
 					</ul>
 				</div>
@@ -35,30 +35,16 @@
 
 
 	<!-- Tournaments Area Start -->
-	<section class="tournaments">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-8 col-md-10">
-					<div class="section-heading">
-						<h5 class="subtitle">
-							Try to check out our
-						</h5>
-						<h2 class="title">
-							Result
-						</h2>
-						<p class="text">
-							Dooplo Tournaments are exciting slot competitions. The goal is to win as many points within a
-							certain amount of time. Player with the most points at the end wins.
-						</p>
-					</div>
-				</div>
-			</div>
-			
-		</div>
+	<section class="tournaments" style="padding: 50px;">
 		<div class="info-table">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
+					<div class="section-heading">
+						<h2 class="title">
+							History Result
+						</h2>
+					</div>
 						<div class="main-box">
 						
 							<div class="tab-content" style="padding-top: 20px;color: white !important;">
@@ -75,90 +61,90 @@
 													<table id="table_id" class="table">
 														<thead>
 															<tr>
-																<th>Column 1</th>
-																<th>Column 2</th>
+																<th>Date</th>
+																<th>Time</th>
+																<th>1st Place</th>
+																<th>2nd Place</th>
+																<th>3rd Place</th>
 															</tr>
 														</thead>
 														<tbody>
 															<tr>
-																<td>Row 1 Data 1</td>
-																<td>Row 1 Data 2</td>
+																<td>18-01-2021</td>
+																<td>Morning</td>
+																<td>164564</td>
+																<td>194545</td>
+																<td>194545</td>
 															</tr>
 															<tr>
-																<td>Row 2 Data 1</td>
-																<td>Row 2 Data 2</td>
+																<td>18-01-2021</td>
+																<td>Morning</td>
+																<td>164564</td>
+																<td>194545</td>
+																<td>194545</td>
 															</tr>
 															<tr>
-																<td>Row 1 Data 1</td>
-																<td>Row 1 Data 2</td>
+																<td>18-01-2021</td>
+																<td>Morning</td>
+																<td>164564</td>
+																<td>194545</td>
+																<td>194545</td>
 															</tr>
 															<tr>
-																<td>Row 2 Data 1</td>
-																<td>Row 2 Data 2</td>
+																<td>18-01-2021</td>
+																<td>Morning</td>
+																<td>164564</td>
+																<td>194545</td>
+																<td>194545</td>
 															</tr>
 															<tr>
-																<td>Row 1 Data 1</td>
-																<td>Row 1 Data 2</td>
+																<td>18-01-2021</td>
+																<td>Morning</td>
+																<td>164564</td>
+																<td>194545</td>
+																<td>194545</td>
 															</tr>
 															<tr>
-																<td>Row 2 Data 1</td>
-																<td>Row 2 Data 2</td>
+																<td>18-01-2021</td>
+																<td>Morning</td>
+																<td>164564</td>
+																<td>194545</td>
+																<td>194545</td>
 															</tr>
 															<tr>
-																<td>Row 1 Data 1</td>
-																<td>Row 1 Data 2</td>
+																<td>18-01-2021</td>
+																<td>Morning</td>
+																<td>164564</td>
+																<td>194545</td>
+																<td>194545</td>
 															</tr>
 															<tr>
-																<td>Row 2 Data 1</td>
-																<td>Row 2 Data 2</td>
+																<td>18-01-2021</td>
+																<td>Morning</td>
+																<td>164564</td>
+																<td>194545</td>
+																<td>194545</td>
 															</tr>
 															<tr>
-																<td>Row 1 Data 1</td>
-																<td>Row 1 Data 2</td>
+																<td>18-01-2021</td>
+																<td>Morning</td>
+																<td>164564</td>
+																<td>194545</td>
+																<td>194545</td>
 															</tr>
 															<tr>
-																<td>Row 2 Data 1</td>
-																<td>Row 2 Data 2</td>
+																<td>18-01-2021</td>
+																<td>Morning</td>
+																<td>164564</td>
+																<td>194545</td>
+																<td>194545</td>
 															</tr>
 															<tr>
-																<td>Row 1 Data 1</td>
-																<td>Row 1 Data 2</td>
-															</tr>
-															<tr>
-																<td>Row 2 Data 1</td>
-																<td>Row 2 Data 2</td>
-															</tr>
-															<tr>
-																<td>Row 1 Data 1</td>
-																<td>Row 1 Data 2</td>
-															</tr>
-															<tr>
-																<td>Row 2 Data 1</td>
-																<td>Row 2 Data 2</td>
-															</tr>
-															<tr>
-																<td>Row 1 Data 1</td>
-																<td>Row 1 Data 2</td>
-															</tr>
-															<tr>
-																<td>Row 2 Data 1</td>
-																<td>Row 2 Data 2</td>
-															</tr>
-															<tr>
-																<td>Row 1 Data 1</td>
-																<td>Row 1 Data 2</td>
-															</tr>
-															<tr>
-																<td>Row 2 Data 1</td>
-																<td>Row 2 Data 2</td>
-															</tr>
-															<tr>
-																<td>Row 1 Data 1</td>
-																<td>Row 1 Data 2</td>
-															</tr>
-															<tr>
-																<td>Row 2 Data 1</td>
-																<td>Row 2 Data 2</td>
+																<td>18-01-2021</td>
+																<td>Morning</td>
+																<td>164564</td>
+																<td>194545</td>
+																<td>194545</td>
 															</tr>
 														</tbody>
 													</table>

@@ -25,7 +25,7 @@
 @endsection
 
 @section('content')
-<div class="container-fluid" style="padding-right:0; padding-left:0;position:relative;top:100px;">
+<div class="container-fluid" style="padding-right:0; padding-left:0;">
 	<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 		<div class="carousel-inner">
 			<div class="carousel-item active">
@@ -51,7 +51,7 @@
 
 
 <!-- Lottery Staticstics Area Start -->
-<section class="lottery-area" style="padding: 0;">
+<section class="lottery-area" style="padding: 0; margin-top:-50px;">
 
 	<div class="daily-lottery" style="padding: 0;">
 		<div class="container">
@@ -82,7 +82,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<div id="carousel1" class="carousel slide" data-ride="carousel">
+					<!-- <div id="carousel2" class="carousel slide" data-ride="carousel">
 						<div class="carousel-inner">
 							<div class="carousel-item active">
 								<img class="d-block w-100" src="{{ asset('assets/images/card-img-1.jpg') }}" alt="First slide">
@@ -94,15 +94,16 @@
 								<img class="d-block w-100" src="{{ asset('assets/images/card-img-3.jpg') }}" alt="Third slide">
 							</div>
 						</div>
-						<a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
+						<a class="carousel-control-prev" href="#carousel2" role="button" data-slide="prev">
 							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 							<span class="sr-only">Previous</span>
 						</a>
-						<a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
+						<a class="carousel-control-next" href="#carousel2" role="button" data-slide="next">
 							<span class="carousel-control-next-icon" aria-hidden="true"></span>
 							<span class="sr-only">Next</span>
 						</a>
-					</div>
+					</div> -->
+					<img src="{{ asset('assets/images/iklan.jpg') }}" alt="">
 				</div>
 			</div>
 		</div>
@@ -192,16 +193,9 @@
 		<div class="row justify-content-center">
 			<div class="col-lg-8 col-md-10">
 				<div class="section-heading">
-					<h5 class="subtitle">
-						The Smarter Way
-					</h5>
 					<h2 class="title">
 						Past Winner
 					</h2>
-					<p class="text">
-						The World's First Crypto Lending Marketplace and
-						Affordable and competitive interest rates
-					</p>
 				</div>
 			</div>
 		</div>
@@ -956,7 +950,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<div id="carousel2" class="carousel slide" data-ride="carousel">
+					<!-- <div id="carousel2" class="carousel slide" data-ride="carousel">
 						<div class="carousel-inner">
 							<div class="carousel-item active">
 								<img class="d-block w-100" src="{{ asset('assets/images/card-img-1.jpg') }}" alt="First slide">
@@ -976,7 +970,8 @@
 							<span class="carousel-control-next-icon" aria-hidden="true"></span>
 							<span class="sr-only">Next</span>
 						</a>
-					</div>
+					</div> -->
+					<img src="{{ asset('assets/images/iklan.jpg') }}" alt="">
 				</div>
 			</div>
 		</div>

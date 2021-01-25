@@ -35,16 +35,11 @@
 
 
 	<!-- Tournaments Area Start -->
-	<section class="tournaments" style="padding: 50px;">
+	<section class="tournaments" style="padding: 5px 50px 50px;">
 		<div class="info-table">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
-					<div class="section-heading">
-						<h2 class="title">
-							History Result
-						</h2>
-					</div>
 						<div class="main-box">
 						
 							<div class="tab-content" style="padding-top: 20px;color: white !important;">

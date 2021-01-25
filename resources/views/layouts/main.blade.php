@@ -33,42 +33,8 @@
 	<!-- preloader area end -->
 
 	<!-- Header Area Start  -->
-	<header class="header">
-		<!-- Top Header Area Start -->
-		<section class="top-header">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="content">
-							<div class="left-content">
-								<ul class="left-list">
-									<li>
-										<p>
-											<i class="fas fa-headset"></i>	Support
-										</p>
-									</li>
-									<li>
-										<p>
-											<i class="fas fa-envelope"></i>	info@Dooplo.com
-										</p>
-									</li>
-								</ul>
-							</div>
-							<div class="right-content">
-								<ul class="right-list">
-									<li>
-										<a href="#" class="sign-in" data-toggle="modal" data-target="#login">
-											<i class="fas fa-user"></i> Sign In
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Top Header Area End -->
+	<header class="header nav-fixed">
+		
 		<!--Main-Menu Area Start-->
 		<div class="mainmenu-area">
 			<div class="container">
@@ -88,7 +54,7 @@
 										</a>
 									</li>
 								</ul>
-								<a  href="{{ url('result') }}" class="mybtn1" target="_blank"> Result</a>
+								<a  href="{{ url('result') }}" class="mybtn1" target="_blank">All Result</a>
 							</div>
 						</nav>
 					</div>
@@ -106,31 +72,13 @@
 		<div class="copy-bg" style="margin: 0;">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-5">
-						<div class="left-area">
-							<p>Copyright © 2019.All Rights Reserved By <a href="#">Dooplo</a>
+					<div class="col-lg-12">
+						<div class="text-center" style="padding-bottom: -7px;">
+							<p>Alaska6D © 2021 - All Rights Reserved</a>
 							</p>
 						</div>
 					</div>
-					<div class="col-lg-7">
-						<ul class="copright-area-links">
-							<li>
-								<a href="#">Terms Of Use</a>
-							</li>
-							<li>
-								<a href="#">Privacy Policy</a>
-							</li>
-							<li>
-								<a href="#">Gamble</a>
-							</li>
-							<li>
-								<a href="#">Aware</a>
-							</li>
-							<li>
-								<a href="#">Help Cente</a>
-							</li>
-						</ul>
-					</div>
+					
 				</div>
 			</div>
 		</div>
@@ -270,6 +218,4 @@
 	@yield('footer')
 </body> 
 
-
-<!-- Mirrored from pixner.net/dooplo/dooplo/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 05 Jan 2021 09:42:47 GMT -->
 </html>

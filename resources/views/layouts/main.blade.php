@@ -45,16 +45,19 @@
 								<img src="{{ asset('assets/images/logo1.png') }}" alt="">
 							</a>
 							
-							<div class="collapse navbar-collapse fixed-height" id="main_menu">
+							<div class="collapse navbar-collapse" id="main_menu" style="height: 70px;">
 								<ul class="navbar-nav ml-auto">
 									<li class="nav-item dropdown">
 										<a class="nav-link" href="/">
-											Home
+												
 											<div class="mr-hover-effect"></div>
 										</a>
 									</li>
 								</ul>
+								
 								<a  href="{{ url('result') }}" class="mybtn1" target="_blank">All Result</a>
+								
+								
 							</div>
 						</nav>
 					</div>
@@ -74,7 +77,8 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="text-center" style="padding-bottom: -7px;">
-							<p>Alaska6D © 2021 - All Rights Reserved</a>
+							<p><a href="/">Alaska6D</a> © 2021 - All Rights Reserved
+								
 							</p>
 						</div>
 					</div>

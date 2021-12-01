@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Alaska6d')
+@section('title', 'Alamaba Lotttery')
 
 @section('content')
 <div class="row">
@@ -17,7 +17,7 @@
                             <span toggle="#password" class="fa fa-lg fa-eye field-icon toggle-password"></span>
 
                             @error('password')
-                                <span class="text-danger"><strong>{{ $message }}</strong></span>
+                            <span class="text-danger"><strong>{{ $message }}</strong></span>
                             @enderror
                         </div>
                     </div>
@@ -53,7 +53,7 @@
         margin-top: -23px;
         position: relative;
         z-index: 2;
-        cursor:pointer;
+        cursor: pointer;
     }
 </style>
 @endpush
@@ -61,7 +61,7 @@
 {{-- JS --}}
 @push('js')
 <script>
-    $(document).ready(function () {
+    $(document).ready(function() {
         $(".toggle-password").on('click', function() {
             $(this).toggleClass("fa-eye fa-eye-slash");
             var input = $($(this).attr("toggle"));
@@ -71,7 +71,7 @@
                 input.attr("type", "password");
             }
         });
-        
+
         $(".toggle-passwords").on('click', function() {
             $(this).toggleClass("fa-eye fa-eye-slash");
             var input = $($(this).attr("toggle"));
@@ -82,6 +82,7 @@
             }
         });
     });
+
     function checkPasswordMatch() {
         var password = $("#password").val();
         var confirmPassword = $("#confirm-password").val();

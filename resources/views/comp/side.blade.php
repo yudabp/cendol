@@ -1,3 +1,7 @@
+<?php
+    $sp = App\Models\User::where("id",Auth::user()->id)->first();;
+?>
+
 <div class="nav-left-sidebar sidebar-dark">
     <div class="menu-list">
         <nav class="navbar navbar-expand-lg navbar-light">
@@ -20,6 +24,13 @@
                             <i class="fas fa-fw fa-cog pb-1"></i>Setting
                         </a>
                     </li>
+                    @if($sp->is_supervisor == 1)
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('log') }}">
+                            <i class="fas fa-fw fa-cog pb-1"></i>Log Activity
+                        </a>
+                    </li>
+                    @endif
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">
                             <i class="fas fa-power-off mr-2"></i> {{ __('Logout') }}

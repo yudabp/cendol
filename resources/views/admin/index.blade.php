@@ -1,5 +1,6 @@
 @extends('layouts.app')
-@section('title', 'Alaska6d')
+{{-- @section('title', '{{config('app')}}') --}}
+<title>{{config('app.name')}}</title>
 
 @section('content')
 <div class="row">
@@ -7,12 +8,12 @@
         <div class="card shadow">
             <div class="card-body">
                 @if (session('status'))
-                    <div class="alert alert-success alert-dismissible fade show" role="alert">
-                        <strong>{{ session('status') }}</strong>
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <strong>{{ session('status') }}</strong>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
                 @endif
                 <button id="add" class="btn btn-sm btn-primary mb-3"><i class="fa fa-plus"></i> Add</button>
                 <div class="table-responsive">
@@ -29,7 +30,7 @@
                             </tr>
                         </thead>
                         <tbody class="text-center">
-                            
+
                         </tbody>
                     </table>
                 </div>
@@ -49,7 +50,7 @@
             <div class="modal-body">
                 <span id="form_result"></span>
                 <form id="form-number">
-                @csrf
+                    @csrf
                     <div class="row">
                         <div class="col">
                             <div class="form-group">
@@ -62,10 +63,10 @@
                                 <label class="control-label">Time:</label>
                                 <select name="waktu" id="waktu" class="form-control" autocomplete="off">
                                     <option value="">Select Time</option>
-                                    <option value="09:00:00">09:00 AM</option>
-                                    <option value="11:45:00">11:45 AM</option>
-                                    <option value="19:00:00">07:00 PM</option>
-                                    <option value="21:00:00">09:00 PM</option>
+                                    <option value="08:30:00">08:30 AM</option>
+                                    <option value="09:45:00">09:45 AM</option>
+                                    <option value="15:30:00">15:30 PM</option>
+                                    <option value="21:00:00">21:00 PM</option>
                                 </select>
                             </div>
                         </div>
@@ -74,19 +75,19 @@
                         <div class="col">
                             <div class="form-group">
                                 <label class="control-label">1st Winner:</label>
-                                <input type="text" name="no_satu" id="no_satu" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" maxlength="6" minlength="6" placeholder="000000" autocomplete="off">
+                                <input type="text" name="no_satu" id="no_satu" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" maxlength="4" minlength="4" placeholder="0000" autocomplete="off">
                             </div>
                         </div>
                         <div class="col">
                             <div class="form-group">
                                 <label class="control-label">2nd Winner:</label>
-                                <input type="text" name="no_dua" id="no_dua" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" maxlength="6" minlength="6" placeholder="000000" autocomplete="off">
+                                <input type="text" name="no_dua" id="no_dua" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" maxlength="4" minlength="4" placeholder="0000" autocomplete="off">
                             </div>
                         </div>
                         <div class="col">
                             <div class="form-group">
                                 <label class="control-label">3rd Winner:</label>
-                                <input type="text" name="no_tiga" id="no_tiga" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" maxlength="6" minlength="6" placeholder="000000" autocomplete="off">
+                                <input type="text" name="no_tiga" id="no_tiga" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" maxlength="4" minlength="4" placeholder="0000" autocomplete="off">
                             </div>
                         </div>
                     </div>
@@ -113,14 +114,14 @@
 
 @push('js')
 <script src="{{ asset('assets/vendor/datatables/js/jquery.dataTables.min.js') }}"></script>
-<script src="{{ asset('assets/vendor/datatables/js/DataTables.bootstrap4.min.js') }}"></script>
+<script src="{{ asset('assets/vendor/datatables/js/dataTables.bootstrap4.min.js') }}"></script>
 <script src="{{ asset('js/dataTables.responsive.min.js') }}"></script>
 <script src="{{ asset('js/responsive.bootstrap4.min.js') }}"></script>
 <script src="{{ asset('js/bootstrap-datepicker.min.js') }}"></script>
 <script src="{{ asset('js/toastr.min.js') }}"></script>
 <script src="{{ asset('js/sweetalert2.min.js') }}"></script>
 <script>
-    $(document).ready(function () {
+    $(document).ready(function() {
         $('#table').DataTable({
             'ordering': false,
             processing: true,
@@ -150,12 +151,11 @@
             }, {
                 data: 'action',
                 name: 'action',
-            } 
-            ]
+            }]
         });
 
         // Reset form when close button pressed
-        $('.close').on('click', function () {
+        $('.close').on('click', function() {
             $('#btn').removeClass('btn-info').addClass('btn-success').val('Save');
             $('#form_result').html('');
             $('#form-number')[0].reset();
@@ -168,7 +168,7 @@
         });
 
         // Open the modal
-        $('#add').on('click', function () {
+        $('#add').on('click', function() {
             $('.modal-title').text('Tambah Baru');
             $('#action').val('add');
             $('#btn').val('Save');
@@ -176,7 +176,7 @@
         });
 
         // Record into database
-        $('#form-number').on('submit', function (event) {
+        $('#form-number').on('submit', function(event) {
             event.preventDefault();
             var url = "";
             var pesan = "";
@@ -197,7 +197,7 @@
                 method: 'POST',
                 dataType: 'JSON',
                 data: $(this).serialize(),
-                success: function (data) {
+                success: function(data) {
                     var html = '';
                     if (data.success) {
                         toastr.success(pesan);
@@ -211,7 +211,7 @@
                     if (data.errors) {
                         html = '<div class="alert alert-danger"><ul>';
                         for (var i = 0; i < data.errors.length; i++) {
-                            html += '<li>'+ data.errors[i] +'</li>';
+                            html += '<li>' + data.errors[i] + '</li>';
                         }
                         html += '</ul></div>';
                         toastr.error('⚠ You must fill all columns!');
@@ -222,13 +222,13 @@
         });
 
         // Get data by Id
-        $(document).on('click', '.edit', function () {
+        $(document).on('click', '.edit', function() {
             var id = $(this).attr('id');
 
             $.ajax({
-                url: '/backend/edit/'+id,
+                url: '/backend/edit/' + id,
                 dataType: 'JSON',
-                success: function (data) {
+                success: function(data) {
                     $('#modal-number').modal('show');
                     $('.modal-title').text('Edit Winner');
                     $('#action').val('edit');
@@ -275,15 +275,17 @@
             confirmButtonText: "Yes, delete it!",
             cancelButtonText: "No, Cancel it!",
             reverseButtons: !0
-        }).then(function (event) {
+        }).then(function(event) {
             if (event.value === true) {
                 var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
                 $.ajax({
-                    url: '/backend/delete/'+number,
+                    url: '/backend/delete/' + number,
                     type: 'POST',
-                    data: { _token: CSRF_TOKEN },
+                    data: {
+                        _token: CSRF_TOKEN
+                    },
                     dataType: 'JSON',
-                    success: function (results) {
+                    success: function(results) {
                         if (results.success === true) {
                             Swal.fire({
                                 icon: 'success',
@@ -300,7 +302,7 @@
             } else {
                 event.dismiss;
             }
-        }, function (dismiss) {
+        }, function(dismiss) {
             return false;
         });
     }

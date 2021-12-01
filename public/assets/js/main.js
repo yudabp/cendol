@@ -1,192 +1,197 @@
-$(function ($) {
-    "use strict";
- 
-    jQuery(document).ready(function () {
+(function ($) {
+    "user strict";
 
-
-    //   magnific popup activation
-    $('.video-play-btn, .play-video').magnificPopup({
-        type: 'video'
-    });
-    
-    $('.img-popup').magnificPopup({
-        type: 'image'
-    });
-
-    // Product deal countdown
-    $('[data-countdown]').each(function () {
-        var $this = $(this),
-            finalDate = $(this).data('countdown');
-        $this.countdown(finalDate, function (event) {
-            $this.html(event.strftime('<span>%DD : </span> <span>%HH : </span>  <span>%MM : </span> <span>%SS</span>'));
+    $(document).ready(function () {
+        // Nice Select
+        $('.select-bar').niceSelect();
+        // Lightcase
+        $('.video-popup').magnificPopup({
+            type: 'iframe',
         });
-    });
+        $('.img-popup').magnificPopup({
+            type: 'image'
+        });
+
+        // Product deal countdown
+        $('[data-countdown]').each(function () {
+            var $this = $(this),
+                finalDate = $(this).data('countdown');
+            $this.countdown(finalDate, function (event) {
+                $this.html(event.strftime('<span>%D Days </span> <span>%H:</span><span>%M:</span><span>%S</span>'));
+            });
+        });
 
 
-    // Game Slider
-    var $game_slider = $('.game-slider');
-    $game_slider.owlCarousel({
-        loop: true,
-        dots: false,
-        autoplay: false,
-        margin: 0,
-        autoplayTimeout: 6000,
-        smartSpeed: 1000,
+        //  Faq Page js
+        $('.faq-menu ul li a').on('click', function (e) {
+            e.preventDefault();
+            $('.faq-menu ul li a').removeClass('active');
+            $(this).addClass('active');
+            var $anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top -250
+            }, 1000);
+        });
+
+
+        //  magnificPopup js
+        $("body").each(function () {
+            $(this).find(".img-pop").magnificPopup({
+                type: "image",
+                gallery: {
+                    enabled: true
+                }
+            });
+        });
+
+
+        //MenuBar
+        $('.header-bar').on('click', function () {
+            $(".menu").toggleClass("active");
+            $(".header-bar").toggleClass("active");
+            $('.overlay').toggleClass('active');
+        });
+        $('.overlay').on('click', function () {
+            $(".menu").removeClass("active");
+            $(".header-bar").removeClass("active");
+            $('.overlay').removeClass('active');
+        });
+        //Menu Dropdown Icon Adding
+        $("ul>li>.submenu").parent("li").addClass("menu-item-has-children");
+        // drop down menu width overflow problem fix
+        $('ul').parent('li').hover(function () {
+            var menu = $(this).find("ul");
+            var menupos = $(menu).offset();
+            if (menupos.left + menu.width() > $(window).width()) {
+                var newpos = -$(menu).width();
+                menu.css({
+                    left: newpos
+                });
+            }
+        });
+        $('.menu li a').on('click', function (e) {
+            var element = $(this).parent('li');
+            if (element.hasClass('open')) {
+                element.removeClass('open');
+                element.find('li').removeClass('open');
+                element.find('ul').slideUp(300, "swing");
+            } else {
+                element.addClass('open');
+                element.children('ul').slideDown(300, "swing");
+                element.siblings('li').children('ul').slideUp(300, "swing");
+                element.siblings('li').removeClass('open');
+                element.siblings('li').find('li').removeClass('open');
+                element.siblings('li').find('ul').slideUp(300, "swing");
+            }
+        })
+        // Scroll To Top
+        var scrollTop = $(".scrollToTop");
+        $(window).on('scroll', function () {
+            if ($(this).scrollTop() < 500) {
+                scrollTop.removeClass("active");
+            } else {
+                scrollTop.addClass("active");
+            }
+        });
         
-    });
-
-    // payment Slider
-    var $method_slider = $('.method-slider');
-    $method_slider.owlCarousel({
-        loop: true,
-        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-        nav: true,
-        dots: false,
-        autoplay: false,
-        margin: 0,
-        autoplayTimeout: 6000,
-        smartSpeed: 1000,
-        responsive: {
-            0: {
-                items: 2
-            },
-            500: {
-                items: 3
-            },
-            768: {
-                items: 5
-            },
-            992: {
-                items: 6
-            },
-            1200: {
-                items: 7
-            },
-            1920: {
-                items: 7
+        //Click event to scroll to top
+        $('.scrollToTop').on('click', function () {
+            $('html, body').animate({
+                scrollTop: 0
+            }, 500);
+            return false;
+        });
+       
+        // Header Sticky Here
+        var headerOne = $(".header-section");
+        $(window).on('scroll', function () {
+            if ($(this).scrollTop() < 1) {
+                headerOne.removeClass("header-active");
+            } else {
+                headerOne.addClass("header-active");
             }
-        }
-    });
+        });
+        $('.window-warning .lay').on('click', function () {
+            $('.window-warning').addClass('inActive');
+        })
+        $('.seat-plan-wrapper li .movie-schedule .item').on('click', function () {
+            $('.window-warning').removeClass('inActive');
+        })
 
-    // testimonial-slider
-    var $testimonial_slider = $('.testimonial-slider');
-    $testimonial_slider.owlCarousel({
-        loop: true,
-        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-        nav: true,
-        dots: false,
-        autoplay: false,
-        margin: 30,
-        autoplayTimeout: 6000,
-        smartSpeed: 1000,
-        responsive: {
-            0: {
-                items: 1
-            },
-            768: {
-                items: 1
-            },
-            960: {
-                items: 1
-            },
-            1200: {
-                items: 1
+        // draw-slider
+        $('.draw-slider').owlCarousel({
+            loop: false,
+            responsiveClass: true,
+            nav: true,
+            dots: false,
+            navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+            autoplay: false,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: true,
+            smartSpeed: 2000,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                576: {
+                    items: 2,
+                },
+                768: {
+                    items: 2,
+                },
+                992: {
+                    items: 3,
+                },
+                1200: {
+                    items: 4,
+                }
             }
-        }
-    });
+        });
 
+        // draw-number-slider
+        $('.number-slider').owlCarousel({
+            loop: false,
+            responsiveClass: true,
+            nav: true,
+            dots: false,
+            navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+            autoplay: false,
+            margin: 0,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: true,
+            smartSpeed: 2000,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                576: {
+                    items: 1,
+                },
+                768: {
+                    items: 2,
+                },
+                992: {
+                    items: 3,
+                },
+                1200: {
+                    items: 3,
+                }
+            }
+        });
 
-});
-
-
-  
-
-
-    /*-------------------------------
-        back to top
-    ------------------------------*/
-    $(document).on('click', '.bottomtotop', function () {
-        $("html,body").animate({
-            scrollTop: 0
-        }, 2000);
-    });
-
-    //define variable for store last scrolltop
-    var lastScrollTop = '';
-    $(window).on('scroll', function () {
-        var $window = $(window);
-        if ($window.scrollTop( ) > 0 ) {
-            $(".header").addClass('nav-fixed');
-        } else {
-            $(".header").removeClass('nav-fixed');
-        }
-
-        /*---------------------------
-            back to top show / hide
-        ---------------------------*/
-        var st = $(this).scrollTop();
-        var ScrollTop = $('.bottomtotop');
-        if ($(window).scrollTop() > 1000) {
-            ScrollTop.fadeIn(1000);
-        } else {
-            ScrollTop.fadeOut(1000);
-        }
-        lastScrollTop = st;
 
     });
 
+    // Preloader Js
     $(window).on('load', function () {
-  
-    /*---------------------
-        Preloader
-    -----------------------*/
-    var preLoder = $("#preloader");
-    preLoder.addClass('hide');
-    var backtoTop = $('.back-to-top');
-    /*-----------------------------
-        back to top
-    -----------------------------*/
-    var backtoTop = $('.bottomtotop');
-    backtoTop.fadeOut(100);
-    
+        $('.preloader').fadeOut(1000);
+        var img = $('.bg_img');
+        img.css('background-image', function () {
+            var bg = ('url(' + $(this).data('background') + ')');
+            return bg;
+        });
+
     });
 
 
-
-    
-    /*-----------------------------
-        Cart Page Quantity 
-    -----------------------------*/
-    $(document).on('click', '.qtminus', function () {
-        var el = $(this);
-        var $tselector = el.parent().parent().find('.qttotal');
-        total = $($tselector).text();
-        if (total > 1) {
-            total--;
-        }
-        $($tselector).text(total);
-    });
-
-    $(document).on('click', '.qtplus', function () {
-        var el = $(this);
-        var $tselector = el.parent().parent().find('.qttotal');
-        total = $($tselector).text();
-        if(stock != "")
-        {
-            var stk = parseInt(stock);
-              if(total < stk)
-              {
-                 total++;
-                 $($tselector).text(total);              
-              }
-        }
-        else {
-        total++;            
-        }
-
-        $($tselector).text(total);
-    });
-
-   
-
-});
+})(jQuery);

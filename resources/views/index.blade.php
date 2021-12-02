@@ -18,10 +18,10 @@
     <link href="assets/vendor/css/bundle.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/fontawesome.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" />
-    <link rel="stylesheet" href="path/to/line-awesome/css/line-awesome-font-awesome.min.css">
+    {{-- <link rel="stylesheet" href="path/to/line-awesome/css/line-awesome-font-awesome.min.css"> --}}
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <!-- Plugin Css -->
-    <link href="assets/creative-startup/css/line-awesome.min.css" rel="stylesheet">
+    {{-- <link href="assets/creative-startup/css/line-awesome.min.css" rel="stylesheet"> --}}
     <link href="assets/vendor/css/revolution-settings.min.css" rel="stylesheet">
     <link href="assets/vendor/css/jquery.fancybox.min.css" rel="stylesheet">
     <link href="assets/vendor/css/owl.carousel.min.css" rel="stylesheet">
@@ -36,7 +36,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    
+
 </head>
 
 
@@ -118,7 +118,7 @@
                         <nav class="navbar navbar-expand-lg">
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <a href="/all-result" class="btn rounded-pill text-white ml-auto" style="background-color: rgba(247, 28, 82, 0.9); margin-top: -10px">ALL RESULT</a>
-                                
+
                             </div>
                         </nav>
                         <ul class="top-social-links fixed-nav-links">
@@ -154,7 +154,7 @@
                         <img src="images/numbers/{{$arr}}.png" alt="" style=" height: 90px;">
                         @endforeach
                         </div>
-                       
+
                         @endif
                     </div>
                 </div>
@@ -170,7 +170,7 @@
                         <img src="images/numbers/{{$arr}}.png" alt="" style=" height: 100px; width: 50%;">
                         @endforeach
                         </div>
-                       
+
                         @endif
                     </div>
                 </div>
@@ -186,7 +186,7 @@
                         <img src="images/numbers/{{$arr}}.png" alt="" style=" height: 100px; width: 50%;">
                         @endforeach
                         </div>
-                       
+
                         @endif
                     </div>
                 </div>
@@ -382,7 +382,7 @@
                                 </table>
                             </div>
                         </div>
-                    </div>  
+                    </div>
                 </div>
             </div>
         </div>

@@ -42,11 +42,11 @@ class DepanController extends Controller
             $arr2 = str_split(strval($numberImg[0]->no_dua));
             $arr3 = str_split(strval($numberImg[0]->no_tiga));
             $date = $numberImg[0]->tanggal;
-            if ($numberImg[0]->waktu == "08:30:00") {
+            if ($numberImg[0]->waktu == "07:00:00") {
                 $waktu = "Morning";
-            } else if ($numberImg[0]->waktu == "09:45:00") {
-                $waktu = "Day";
-            } else if ($numberImg[0]->waktu == "15:30:00") {
+            } else if ($numberImg[0]->waktu == "12:00:00") {
+                $waktu = "Midday";
+            } else if ($numberImg[0]->waktu == "17:00:00") {
                 $waktu = "Evening";
             } else if ($numberImg[0]->waktu == "21:00:00") {
                 $waktu = "Night";
@@ -58,11 +58,11 @@ class DepanController extends Controller
             $arr2 = str_split(strval($numberImgBackup[0]->no_dua));
             $arr3 = str_split(strval($numberImgBackup[0]->no_tiga));
             $date = $numberImgBackup[0]->tanggal;
-            if ($numberImgBackup[0]->waktu == "08:30:00") {
+            if ($numberImgBackup[0]->waktu == "07:00:00") {
                 $waktu = "Morning";
-            } else if ($numberImgBackup[0]->waktu == "09:45:00") {
+            } else if ($numberImgBackup[0]->waktu == "12:00:00") {
                 $waktu = "Day";
-            } else if ($numberImgBackup[0]->waktu == "15:30:00") {
+            } else if ($numberImgBackup[0]->waktu == "17:00:00") {
                 $waktu = "Evening";
             } else if ($numberImgBackup[0]->waktu == "21:00:00") {
                 $waktu = "Night";

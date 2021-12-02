@@ -83,7 +83,7 @@ class DashboardController extends Controller
     {
         $number = Number::find($id);
 
-        
+
         return response()
             ->json([
                 'number'    => $number
